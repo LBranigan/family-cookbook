@@ -1553,6 +1553,9 @@
             document.getElementById('recipeModal').classList.add('active');
             document.body.style.overflow = 'hidden';
 
+            // Push history state so back button closes modal
+            history.pushState({ modal: 'recipe' }, '');
+
             // Request wake lock to keep screen on while cooking
             requestWakeLock();
         }
@@ -1611,6 +1614,9 @@
             });
 
             document.getElementById('photoGalleryModal').classList.add('active');
+
+            // Push history state so back button closes gallery
+            history.pushState({ modal: 'gallery' }, '');
         }
 
         function displayGalleryImage() {
@@ -1677,15 +1683,23 @@
             }
         }
 
-        function closePhotoGallery() {
+        function closePhotoGallery(fromPopstate) {
             document.getElementById('photoGalleryModal').classList.remove('active');
+            // Go back in history unless triggered by popstate
+            if (!fromPopstate) {
+                history.back();
+            }
         }
 
-        function closeModal() {
+        function closeModal(fromPopstate) {
             document.getElementById('recipeModal').classList.remove('active');
             document.body.style.overflow = '';
             // Release wake lock when closing recipe
             releaseWakeLock();
+            // Go back in history unless triggered by popstate
+            if (!fromPopstate) {
+                history.back();
+            }
         }
 
         // Close modal on escape key or clicking outside
@@ -1716,6 +1730,18 @@
 
         document.getElementById('photoGalleryModal').addEventListener('click', (e) => {
             if (e.target.id === 'photoGalleryModal') closePhotoGallery();
+        });
+
+        // Handle browser back button for modals
+        window.addEventListener('popstate', (e) => {
+            const galleryOpen = document.getElementById('photoGalleryModal').classList.contains('active');
+            const recipeOpen = document.getElementById('recipeModal').classList.contains('active');
+
+            if (galleryOpen) {
+                closePhotoGallery(true); // true = don't manipulate history
+            } else if (recipeOpen) {
+                closeModal(true); // true = don't manipulate history
+            }
         });
     </script>
 </body>
