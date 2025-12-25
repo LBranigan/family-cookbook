@@ -930,6 +930,49 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Gallery Navigation Arrows */
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .gallery-nav:hover,
+        .gallery-nav:active {
+            background: rgba(255,255,255,0.4);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .gallery-nav-prev {
+            left: 10px;
+        }
+
+        .gallery-nav-next {
+            right: 10px;
+        }
+
+        .gallery-nav.hidden {
+            display: none;
         }
 
         @media (max-width: 768px) {
@@ -938,6 +981,11 @@
             }
             .photo-gallery-images img {
                 max-height: 50vh;
+            }
+            .gallery-nav {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
             }
         }
 
@@ -1467,10 +1515,14 @@
                 { file: baseName + '-2.jpg', label: 'Page 2' }
             ];
 
-            possibleImages.forEach(imgInfo => {
+            possibleImages.forEach((imgInfo, index) => {
                 const thumb = document.createElement('div');
                 thumb.className = 'recipe-card-thumbnail';
-                thumb.onclick = openPhotoGallery;
+                thumb.dataset.imageIndex = index;
+                thumb.onclick = function(e) {
+                    e.stopPropagation();
+                    openPhotoGallery(index);
+                };
 
                 const img = document.createElement('img');
                 img.src = 'web-images/' + imgInfo.file;
@@ -1504,8 +1556,9 @@
 
         let galleryImages = [];
         let currentGalleryIndex = 0;
+        let requestedStartIndex = 0;
 
-        function openPhotoGallery() {
+        function openPhotoGallery(startIndex) {
             const galleryContainer = document.getElementById('photoGalleryImages');
             const galleryTitle = document.getElementById('photoGalleryTitle');
 
@@ -1513,15 +1566,16 @@
             galleryContainer.innerHTML = '';
             galleryImages = [];
             currentGalleryIndex = 0;
+            requestedStartIndex = startIndex || 0;
 
             // Get the base filename
             const baseName = currentRecipeFile.replace('.jpg', '');
 
             // Collect all possible images
             const possibleImages = [
-                { file: currentRecipeFile, label: 'Front' },
-                { file: baseName + '-back.jpg', label: 'Back' },
-                { file: baseName + '-2.jpg', label: 'Page 2' }
+                { file: currentRecipeFile, label: 'Front', originalIndex: 0 },
+                { file: baseName + '-back.jpg', label: 'Back', originalIndex: 1 },
+                { file: baseName + '-2.jpg', label: 'Page 2', originalIndex: 2 }
             ];
 
             let loadedCount = 0;
@@ -1533,15 +1587,20 @@
                     galleryImages.push(imgInfo);
                     loadedCount++;
                     if (loadedCount === totalToCheck) {
-                        // Sort by original order and display first image
-                        galleryImages.sort((a, b) => possibleImages.indexOf(a) - possibleImages.indexOf(b));
+                        // Sort by original order
+                        galleryImages.sort((a, b) => a.originalIndex - b.originalIndex);
+                        // Find the index in the loaded images that matches the requested start
+                        const startIdx = galleryImages.findIndex(img => img.originalIndex === requestedStartIndex);
+                        currentGalleryIndex = startIdx >= 0 ? startIdx : 0;
                         displayGalleryImage();
                     }
                 };
                 testImg.onerror = function() {
                     loadedCount++;
                     if (loadedCount === totalToCheck) {
-                        galleryImages.sort((a, b) => possibleImages.indexOf(a) - possibleImages.indexOf(b));
+                        galleryImages.sort((a, b) => a.originalIndex - b.originalIndex);
+                        const startIdx = galleryImages.findIndex(img => img.originalIndex === requestedStartIndex);
+                        currentGalleryIndex = startIdx >= 0 ? startIdx : 0;
                         displayGalleryImage();
                     }
                 };
@@ -1566,10 +1625,32 @@
             img.src = 'web-images/' + imgInfo.file;
             img.alt = imgInfo.label;
 
+            // Add navigation arrows if there are multiple images
+            if (galleryImages.length > 1) {
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'gallery-nav gallery-nav-prev';
+                prevBtn.innerHTML = '‹';
+                prevBtn.onclick = function(e) {
+                    e.stopPropagation();
+                    prevGalleryImage();
+                };
+
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'gallery-nav gallery-nav-next';
+                nextBtn.innerHTML = '›';
+                nextBtn.onclick = function(e) {
+                    e.stopPropagation();
+                    nextGalleryImage();
+                };
+
+                item.appendChild(prevBtn);
+                item.appendChild(nextBtn);
+            }
+
             const labelDiv = document.createElement('div');
             labelDiv.className = 'photo-gallery-label';
             if (galleryImages.length > 1) {
-                labelDiv.textContent = `${imgInfo.label} (${currentGalleryIndex + 1}/${galleryImages.length}) - Use ← → arrows`;
+                labelDiv.textContent = `${imgInfo.label} (${currentGalleryIndex + 1}/${galleryImages.length}) - Tap arrows or swipe`;
             } else {
                 labelDiv.textContent = imgInfo.label;
             }
