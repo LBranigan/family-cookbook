@@ -28,9 +28,6 @@ const recipes = [
       "Put mixture in refrigerator for 1 hour.",
       "After mixture has chilled, place walnut-sized pieces on a greased cookie sheet.",
       "Take a small glass and butter the bottom, dip in sugar and press the cookies flat.",
-      "Place in oven at 350° for 10 minutes or until brown.",
-      "After mixture has chilled, place walnut-sized pieces on a greased cookie sheet.",
-      "Take a small glass and butter the bottom, dip in sugar and press the cookies flat.",
       "Place in oven at 350° for 10 minutes or until brown."
     ],
     "notes": "Oven temperature 350° is written at the top. The card does not include instructions for forming the cookies or the baking time.\n\nThe word 'greased' is underlined on the original card.",
@@ -238,16 +235,6 @@ const recipes = [
       "Salt to taste.",
       "Place in 8x8\" baking pan or casserole dish.",
       "Bake at 400°F for 20 minutes until bubbly and browned.",
-      "directions",
-      "[Cook for a] few minutes until aromatic then add chicken broth.",
-      "Mix thoroughly.",
-      "If using for empanadas - cool completely before filling pastries.",
-      "If using for tacos or burritos, include cheese, salsa, lettuce when filling.",
-      "Blend together first 8 ingredients, fold in remaining.",
-      "Salt to taste.",
-      "Place in 8x8\" baking pan or casserole dish.",
-      "Bake at 400°F for 20 minutes until bubbly and browned.",
-      "directions",
       "[Cook for a] few minutes until aromatic then add chicken broth.",
       "Mix thoroughly.",
       "If using for empanadas - cool completely before filling pastries.",
@@ -466,7 +453,6 @@ const recipes = [
       "Add shallots and cook until translucent and carmelized.",
       "Remove to bowl.",
       "Add butter and cook mushrooms until cooked.",
-      "Remove to bowl.",
       "Add drizzle of oil and cook/brown pork.",
       "Chops ~3' per side until nicely browned.",
       "Add rosemary, vinegar, and soy sauce to pan, flip pork chops to coat.",
@@ -715,7 +701,7 @@ const recipes = [
       "Heat pan again with little oil.",
       "Brown beef, then pour vegetables in. (handwritten note: quickly)"
     ],
-    "notes": "This card contains three distinct recipes. The primary JSON fields are populated with the first recipe, 'Beef with Tomato'. A typed line 'meatball {' appears before the cornstarch, sugar, and black pepper, likely indicating these are for a beef coating or marinade. The other recipes on the card are: \n\nRecipe 2: Almond Cookies\nIngredients: Flour 2 C, Baking soda 1/3t, Sugar 1 C, Almond extract 1 T, salt 1/2 t, shortening 1 C, 2 eggs, beaten.\nInstructions: Mix dried ingredients, cut oil in, then add egg.\n\nRecipe 3: Wonton Soup (filling ingredients)\nIngredients: pork - ground 1/2 lb, soy sauce 1T, sesame oil 1/2 tsp, pepper, wine 1T, green onion 1-2.",
+    "notes": "This card contains three distinct recipes. The primary JSON fields are populated with the first recipe, 'Beef with Tomato'. A typed line 'meatball {' appears before the cornstarch, sugar, and black pepper, likely indicating these are for a beef coating or marinade. The other recipes on the card are:\n\nRecipe 2: Almond Cookies\nIngredients: Flour 2 C, Baking soda 1/3t, Sugar 1 C, Almond extract 1 T, salt 1/2 t, shortening 1 C, 2 eggs, beaten.\nInstructions: Mix dried ingredients, cut oil in, then add egg.\n\nRecipe 3: Wonton Soup (filling ingredients)\nIngredients: pork - ground 1/2 lb, soy sauce 1T, sesame oil 1/2 tsp, pepper, wine 1T, green onion 1-2.",
     "originalFile": "PXL_20251223_230500877.jpg"
   },
   {
@@ -2824,7 +2810,7 @@ const recipes = [
       "Let cool in pan.",
       "Turn each pie a few times during cooling to ensure non-sticking."
     ],
-    "notes": "This appears to be the front of a recipe card, listing the title and ingredients. The main cooking instructions are likely on the back. Card has a printed code Z30 in the bottom left and a copyright '© Marlene Sff' in the bottom right.\n\nThe baking time for the large pie was changed from 50 minutes to 40 minutes. For the mini pies, the note says it 'makes ~24 with some wastage'.\n\nThe provided image does not contain a handwritten recipe card. The image is a photograph of a domestic scene featuring two children at a piano.\n\nThe provided image does not contain a recipe card. The image shows two children at a piano with a decorative Christmas village in the background. No text is visible to extract.\n\nThe provided image does not contain a handwritten recipe card. The image shows two children sitting at a piano.\n\nThe provided image does not contain a handwritten recipe card. The image is a photograph of two children playing a piano.\n\nThe provided image does not contain a recipe card or any legible text. The image shows two children sitting at a piano.",
+    "notes": "This appears to be the front of a recipe card, listing the title and ingredients. The main cooking instructions are likely on the back. Card has a printed code Z30 in the bottom left and a copyright '© Marlene Sff' in the bottom right.\n\nThe baking time for the large pie was changed from 50 minutes to 40 minutes. For the mini pies, the note says it 'makes ~24 with some wastage'.",
     "originalFile": "PXL_20251223_210507497.MP.jpg, PXL_20251223_210510044.jpg, PXL_20251223_210528534.jpg"
   },
   {
@@ -4980,13 +4966,8 @@ const recipes = [
       "Pre-cook squash and carrots in the microwave for 1 1/2' on high.",
       "Combine all ingredients in a 8x8 baking dish.",
       "Bake at 400F for 30-",
-      "OR",
       "Place on oiled roasting pan for crisper outsides.",
-      "Sauté onions in a little butter until translucent.",
-      "Pre-cook squash and carrots in the microwave for 1 1/2' on high.",
-      "Combine all ingredients in a 8x8 baking dish.",
       "Bake at 400°F for 30-",
-      "OR",
       "Place on an oiled roasting pan for crisper outsides."
     ],
     "notes": "Serves: 6. Time: ~60'. Preheat Oven: 400°F. The card has a 'directions' heading, but no instructions are listed, indicating this is likely the front of the card.\n\nCard is labeled 'directions'. The microwave time is written as '1 1/2'' which likely means 1 and a half minutes. The baking time is written as '30-', likely meaning 30 minutes.",
@@ -7393,7 +7374,7 @@ const recipes = [
       "To color a pale soup, add some tomato skins or a small amount of caramelized sugar during cooking.",
       "To make a thick soup, bring ingredients to a boil. Combine one cup of water with one of the following: 1 teaspoon barley, 2 tablespoons wheat germ flour, 2 tablespoons white flour or 3 tablespoons of grated raw potato. Then add mixture to soup. Reduce heat and simmer as directed."
     ],
-    "notes": "This is a printed, not handwritten, informational card or recipe divider. It contains definitions and general tips, not a specific recipe. \n\nSOUP COOKING TERMS\n\n- Stock - thin, degreased soup made by slowly cooking bones and/or vegetables.\n- Clarify - to remove the cloudiness of stock by adding egg shell and egg white.\n- Consommé - brown stock that has been clarified.\n- Bouillon - stock that has been clarified and reduced by a third.\n- Broth - stock obtained by cooking fish, meat or fowl and vegetables, and straining.\n- Jellied Soup - molded, cold soup from stock made with gelatinous knuckle bones.\n- Chowder - thick soup of vegetables and fish or meat to which milk and salt pork have been added.\n- Puree - soup thickened with butter and sieved vegetables.\n- Cream Soup - puree to which cream and egg yolks have been added.\n- Bisque - cream soup with a shellfish base.",
+    "notes": "This is a printed, not handwritten, informational card or recipe divider. It contains definitions and general tips, not a specific recipe.\n\nSOUP COOKING TERMS\n\n- Stock - thin, degreased soup made by slowly cooking bones and/or vegetables.\n- Clarify - to remove the cloudiness of stock by adding egg shell and egg white.\n- Consommé - brown stock that has been clarified.\n- Bouillon - stock that has been clarified and reduced by a third.\n- Broth - stock obtained by cooking fish, meat or fowl and vegetables, and straining.\n- Jellied Soup - molded, cold soup from stock made with gelatinous knuckle bones.\n- Chowder - thick soup of vegetables and fish or meat to which milk and salt pork have been added.\n- Puree - soup thickened with butter and sieved vegetables.\n- Cream Soup - puree to which cream and egg yolks have been added.\n- Bisque - cream soup with a shellfish base.",
     "originalFile": "PXL_20251223_225959204.jpg"
   },
   {
@@ -7793,9 +7774,6 @@ const recipes = [
       "Add soy sauce & sugar and mix.",
       "Allow mixture to cool completely.",
       "Add 3-4 Tbs to middle of edge.",
-      "Fold wrapper over filling starting with side (1). Wet tip (4) with water/cornstarch to seal.",
-      "Heat 1 1/2 - 2 cups corn oil in small frying pan to medium-high heat (or use deep fryer).",
-      "Fry for ~3' on each side until golden brown.",
       "Fold wrapper over filling starting with side (1). Wet tip (4) with water/cornstarch to seal.",
       "Heat 1 1/2 - 2 cups corn oil in small frying pan to medium-high heat (or use deep fryer).",
       "Fry for ~3' on each side until golden brown."
@@ -8599,9 +8577,7 @@ const recipes = [
       "Spread on absorbent paper to cool. Store in airtight container.",
       "Microwave Directions:* In large microwave-safe bowl melt margarine on HIGH 1 minute.",
       "Stir in seasoned salt and Lea & Perrins® Worcestershire sauce.",
-      "Gradually add cereals, nuts and pretzels, stirring until all pieces are evenly coated.",
-      "Microwave on HIGH 5 to 6 minutes, stirring every 2 minutes.",
-      "Spread on absorbent paper to cool. Store in airtight container."
+      "Microwave on HIGH 5 to 6 minutes, stirring every 2 minutes."
     ],
     "notes": "Makes 9 cups. *Due to differences in microwave ovens, cooking time may need adjustment. These directions were developed using 625 to 700 watt ovens. Checkerboard Kitchens. ©1990, Ralston Purina Company.",
     "originalFile": "PXL_20251223_172351443.jpg"
