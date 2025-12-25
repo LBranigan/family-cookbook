@@ -1059,24 +1059,29 @@
         @media (max-width: 768px) {
             header {
                 height: auto;
-                min-height: 100px;
+                overflow: visible;
             }
 
             .header-banner {
-                height: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
                 object-position: center center;
             }
 
+            .header-content {
+                position: relative;
+                padding: 1rem;
+            }
+
             header h1 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
             header .subtitle {
-                font-size: 0.9rem;
-            }
-
-            .header-content {
-                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
             }
 
             .controls {
