@@ -217,22 +217,25 @@
             color: var(--antique-white);
         }
 
-        .print-btn {
-            padding: 0.4rem 1rem;
-            font-family: 'Crimson Pro', serif;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid var(--burgundy);
-            background: transparent;
-            color: var(--burgundy);
-            border-radius: 4px;
+        .print-recipe-btn {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: 2px solid var(--burgundy);
+            background: var(--burgundy);
+            color: var(--antique-white);
+            border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
         }
 
-        .print-btn:hover {
-            background: var(--burgundy);
-            color: var(--antique-white);
+        .print-recipe-btn:hover {
+            background: var(--burgundy-dark);
+            border-color: var(--burgundy-dark);
         }
 
         /* Stats */
@@ -1055,7 +1058,13 @@
         /* Responsive */
         @media (max-width: 768px) {
             header {
-                height: 120px;
+                height: auto;
+                min-height: 100px;
+            }
+
+            .header-banner {
+                height: 100px;
+                object-position: center center;
             }
 
             header h1 {
@@ -1178,6 +1187,8 @@
                 <span class="modal-category" id="modalCategory">Category</span>
             </div>
             <div class="modal-body">
+                <button class="print-recipe-btn" onclick="window.print()">🖨️ Print Recipe</button>
+
                 <div class="modal-meta" id="modalMeta"></div>
 
                 <div class="scaler-section" id="scalerSection">
@@ -1212,7 +1223,6 @@
                     </div>
                 </div>
 
-                <button class="print-btn" onclick="window.print()" style="width: 100%; margin-top: 1rem;">Print Recipe</button>
             </div>
         </div>
     </div>
@@ -1517,11 +1527,25 @@
             // Handle multiple source files (comma-separated)
             const primaryFile = recipe.originalFile.split(',')[0].trim();
             const baseName = primaryFile.replace('.jpg', '').replace('.MP', '');
+
+            // Handle different naming conventions for back images
+            // e.g., recipe-2.jpg could have back at recipe-2-back.jpg OR recipe-back-2.jpg
+            let backFile = baseName + '-back.jpg';
+            let backFile2 = null;
+            const numMatch = baseName.match(/-(\d+)$/);
+            if (numMatch) {
+                const baseWithoutNum = baseName.replace(/-\d+$/, '');
+                backFile2 = baseWithoutNum + '-back-' + numMatch[1] + '.jpg';
+            }
+
             const possibleImages = [
                 { file: primaryFile, label: 'Front' },
-                { file: baseName + '-back.jpg', label: 'Back' },
-                { file: baseName + '-2.jpg', label: 'Page 2' }
+                { file: backFile, label: 'Back' }
             ];
+            if (backFile2) {
+                possibleImages.push({ file: backFile2, label: 'Back' });
+            }
+            possibleImages.push({ file: baseName + '-2.jpg', label: 'Page 2' });
 
             possibleImages.forEach((imgInfo, index) => {
                 const thumb = document.createElement('div');
@@ -1582,12 +1606,24 @@
             // Get the base filename (handle .MP.jpg files)
             const baseName = currentRecipeFile.replace('.jpg', '').replace('.MP', '');
 
+            // Handle different naming conventions for back images
+            let backFile = baseName + '-back.jpg';
+            let backFile2 = null;
+            const numMatch = baseName.match(/-(\d+)$/);
+            if (numMatch) {
+                const baseWithoutNum = baseName.replace(/-\d+$/, '');
+                backFile2 = baseWithoutNum + '-back-' + numMatch[1] + '.jpg';
+            }
+
             // Collect all possible images
             const possibleImages = [
                 { file: currentRecipeFile, label: 'Front', originalIndex: 0 },
-                { file: baseName + '-back.jpg', label: 'Back', originalIndex: 1 },
-                { file: baseName + '-2.jpg', label: 'Page 2', originalIndex: 2 }
+                { file: backFile, label: 'Back', originalIndex: 1 }
             ];
+            if (backFile2) {
+                possibleImages.push({ file: backFile2, label: 'Back', originalIndex: 1 });
+            }
+            possibleImages.push({ file: baseName + '-2.jpg', label: 'Page 2', originalIndex: 2 });
 
             let loadedCount = 0;
             const totalToCheck = possibleImages.length;

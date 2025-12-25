@@ -426,7 +426,7 @@ const recipes = [
   },
   {
     "name": "Barbecuing",
-    "category": "Cookies",
+    "category": "Reference",
     "yield": "",
     "ingredients": [],
     "instructions": [
