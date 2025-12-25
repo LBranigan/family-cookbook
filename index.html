@@ -1116,12 +1116,6 @@
             <!-- Recipe cards will be dynamically generated -->
         </div>
 
-        <section class="toc-section" id="tocSection">
-            <h2>Full Recipe Index</h2>
-            <div class="toc-columns" id="tocContent">
-                <!-- TOC will be dynamically generated -->
-            </div>
-        </section>
     </main>
 
     <!-- Recipe Modal -->
@@ -1193,7 +1187,6 @@
 
         function initializeCookbook() {
             generateCategoryButtons();
-            generateTOC();
             generateRecipeCards();
             updateStats();
         }
@@ -1209,26 +1202,6 @@
                 btn.textContent = category;
                 btn.onclick = () => filterByCategory(category);
                 container.appendChild(btn);
-            });
-        }
-
-        function generateTOC() {
-            const categories = [...new Set(recipes.map(r => r.category))].sort();
-            const container = document.getElementById('tocContent');
-            container.innerHTML = '';
-
-            categories.forEach(category => {
-                const categoryRecipes = recipes.filter(r => r.category === category).sort((a, b) => a.name.localeCompare(b.name));
-
-                const div = document.createElement('div');
-                div.className = 'toc-category';
-                div.innerHTML = `
-                    <h3>${category} <span style="font-weight: normal; opacity: 0.6;">(${categoryRecipes.length})</span></h3>
-                    <ul>
-                        ${categoryRecipes.map(r => `<li><a href="#" onclick="openRecipe(${recipes.indexOf(r)}); return false;">${r.name}</a></li>`).join('')}
-                    </ul>
-                `;
-                container.appendChild(div);
             });
         }
 
