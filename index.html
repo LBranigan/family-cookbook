@@ -73,23 +73,24 @@
         .flourish-bl { bottom: 20px; left: 20px; transform: scaleY(-1); }
         .flourish-br { bottom: 20px; right: 20px; transform: scale(-1); }
 
-        /* Header - Compact */
+        /* Header - Full Width Banner */
         header {
             position: relative;
-            padding: 1.5rem 2rem;
             text-align: center;
             background: var(--burgundy);
             border-bottom: 3px solid var(--gold);
         }
 
-        .header-image {
-            max-width: 200px;
-            max-height: 120px;
-            width: auto;
-            height: auto;
-            margin-bottom: 0.75rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        .header-banner {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .header-content {
+            padding: 1rem 2rem 1.5rem;
+            background: var(--burgundy);
         }
 
         header h1 {
@@ -318,11 +319,12 @@
         /* Recipe Card - Vintage Index Card Style */
         .recipe-card {
             background: var(--antique-white);
-            border-radius: 2px;
+            border-radius: 4px;
+            border: 1px solid rgba(139, 90, 43, 0.15);
             box-shadow:
-                0 1px 2px var(--paper-shadow),
-                0 4px 12px var(--paper-shadow),
-                4px 4px 0 var(--cream-dark);
+                0 2px 4px rgba(0, 0, 0, 0.08),
+                0 8px 24px rgba(0, 0, 0, 0.12),
+                0 1px 2px rgba(0, 0, 0, 0.06);
             overflow: hidden;
             cursor: pointer;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -330,6 +332,14 @@
             opacity: 0;
             transform: translateY(20px);
             animation: cardReveal 0.6s ease forwards;
+        }
+
+        .recipe-card:hover {
+            border-color: rgba(139, 90, 43, 0.25);
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.1),
+                0 12px 32px rgba(0, 0, 0, 0.15),
+                0 2px 4px rgba(0, 0, 0, 0.08);
         }
 
         .recipe-card:nth-child(1) { animation-delay: 0.05s; }
@@ -618,6 +628,11 @@
             font-weight: bold;
         }
 
+        .ingredient-qty {
+            font-weight: 700;
+            color: var(--burgundy);
+        }
+
         .instructions-list {
             list-style: none;
             counter-reset: step;
@@ -766,27 +781,42 @@
             border-top: 1px dashed var(--cream-dark);
         }
 
-        .original-photo-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
+        .original-photo-section h4 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
-            color: var(--burgundy);
-            text-decoration: none;
-            padding: 1rem 2rem;
-            min-height: 56px;
-            border: 2px solid var(--burgundy);
-            border-radius: 100px;
-            transition: all 0.3s ease;
+            color: var(--brown-light);
+            margin-bottom: 1rem;
+        }
+
+        .recipe-card-thumbnail {
+            display: inline-block;
             cursor: pointer;
+            transition: all 0.3s ease;
             touch-action: manipulation;
         }
 
-        .original-photo-link:hover {
-            background: var(--burgundy);
-            color: var(--antique-white);
+        .recipe-card-thumbnail img {
+            max-width: 180px;
+            max-height: 140px;
+            border-radius: 4px;
+            border: 2px solid var(--cream-dark);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .recipe-card-thumbnail:hover img {
+            border-color: var(--burgundy);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            transform: scale(1.05);
+        }
+
+        .recipe-card-thumbnail span {
+            display: block;
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.85rem;
+            color: var(--brown-light);
+            margin-top: 0.5rem;
         }
 
         /* Photo Gallery Modal */
@@ -1030,9 +1060,11 @@
 </head>
 <body>
     <header>
-        <img src="header-image.png" alt="Family Cookbook" class="header-image">
-        <h1>Family Recipe Collection</h1>
-        <p class="subtitle">Treasured recipes passed down through generations</p>
+        <img src="header-banner.jpg" alt="Family Cookbook" class="header-banner">
+        <div class="header-content">
+            <h1>Family Recipe Collection</h1>
+            <p class="subtitle">Treasured recipes passed down through generations</p>
+        </div>
     </header>
 
     <div class="controls">
@@ -1101,9 +1133,11 @@
                 </div>
 
                 <div class="modal-section original-photo-section">
-                    <a id="modalPhotoLink" class="original-photo-link" onclick="openPhotoGallery()">
-                        <span>📷</span> View Original Recipe Card
-                    </a>
+                    <h4>Original Recipe Card</h4>
+                    <div class="recipe-card-thumbnail" onclick="openPhotoGallery()">
+                        <img id="recipeCardThumbnail" src="" alt="Original recipe card">
+                        <span>Tap to enlarge</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1346,6 +1380,23 @@
             return text;
         }
 
+        // Format ingredient with bold quantity
+        function formatIngredientWithBoldQty(text, scale = 1) {
+            const parsed = parseQuantity(text);
+            if (parsed) {
+                let qty = text.substring(0, parsed.end);
+                let rest = text.substring(parsed.end);
+
+                if (scale !== 1) {
+                    const scaledValue = parsed.value * scale;
+                    qty = formatQuantity(scaledValue);
+                }
+
+                return `<span class="ingredient-qty">${qty}</span>${rest}`;
+            }
+            return text;
+        }
+
         function scaleRecipe(scale) {
             currentScale = scale;
 
@@ -1354,12 +1405,11 @@
                 btn.classList.toggle('active', parseFloat(btn.dataset.scale) === scale);
             });
 
-            // Re-render ingredients with new scale
+            // Re-render ingredients with new scale and bold quantities
             const recipe = recipes[currentRecipeIndex];
             const ingredientsList = document.getElementById('modalIngredients');
             ingredientsList.innerHTML = recipe.ingredients.map(ingredient => {
-                const scaled = scale === 1 ? ingredient : scaleIngredient(ingredient, scale);
-                return `<li>${scaled}</li>`;
+                return `<li>${formatIngredientWithBoldQty(ingredient, scale)}</li>`;
             }).join('');
 
             // Re-attach click handlers
@@ -1387,7 +1437,10 @@
             document.getElementById('modalMeta').innerHTML = metaHtml;
             document.getElementById('modalMeta').style.display = metaHtml ? 'block' : 'none';
 
-            document.getElementById('modalIngredients').innerHTML = recipe.ingredients.map(i => `<li>${i}</li>`).join('');
+            // Render ingredients with bold quantities
+            document.getElementById('modalIngredients').innerHTML = recipe.ingredients.map(i =>
+                `<li>${formatIngredientWithBoldQty(i)}</li>`
+            ).join('');
             document.getElementById('modalInstructions').innerHTML = recipe.instructions.map(i => `<li>${i}</li>`).join('');
 
             const notesSection = document.getElementById('modalNotesSection');
@@ -1401,6 +1454,16 @@
             // Store current recipe file for photo gallery
             currentRecipeFile = recipe.originalFile;
             currentRecipeName = recipe.name;
+
+            // Set thumbnail image
+            const thumbnail = document.getElementById('recipeCardThumbnail');
+            thumbnail.src = 'web-images/' + recipe.originalFile;
+            thumbnail.onerror = function() {
+                this.parentElement.style.display = 'none';
+            };
+            thumbnail.onload = function() {
+                this.parentElement.style.display = 'inline-block';
+            };
 
             // Reset scaler buttons
             document.querySelectorAll('.scaler-btn').forEach(btn => {
