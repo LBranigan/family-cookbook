@@ -531,26 +531,28 @@
 
         .close-btn {
             position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            width: 44px;
-            height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 2px solid rgba(255,255,255,0.3);
+            top: 1rem;
+            right: 1rem;
+            width: 56px;
+            height: 56px;
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.4);
             border-radius: 50%;
             color: var(--antique-white);
-            font-size: 1.5rem;
+            font-size: 2rem;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
+            touch-action: manipulation;
         }
 
-        .close-btn:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: rgba(255,255,255,0.5);
-            transform: rotate(90deg);
+        .close-btn:hover,
+        .close-btn:active {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.6);
+            transform: scale(1.1);
         }
 
         .modal-body {
@@ -656,6 +658,103 @@
             line-height: 1.5;
         }
 
+        /* Interactive Checklists - tap to cross off */
+        .ingredients-list li,
+        .instructions-list li {
+            cursor: pointer;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: all 0.2s ease;
+        }
+
+        .ingredients-list li:hover,
+        .instructions-list li:hover {
+            background: rgba(114, 47, 55, 0.05);
+        }
+
+        .ingredients-list li.checked,
+        .instructions-list li.checked {
+            text-decoration: line-through;
+            opacity: 0.5;
+            color: var(--brown-light);
+        }
+
+        .instructions-list li.checked::before {
+            background: var(--sage);
+        }
+
+        /* Servings Scaler */
+        .scaler-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background: var(--cream);
+            border-radius: 8px;
+            flex-wrap: wrap;
+        }
+
+        .scaler-label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--brown);
+        }
+
+        .scaler-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .scaler-btn {
+            min-width: 56px;
+            min-height: 56px;
+            padding: 0.75rem 1.25rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: 2px solid var(--burgundy);
+            background: transparent;
+            color: var(--burgundy);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            touch-action: manipulation;
+        }
+
+        .scaler-btn:hover,
+        .scaler-btn.active {
+            background: var(--burgundy);
+            color: var(--antique-white);
+        }
+
+        .scaler-btn.active {
+            box-shadow: 0 2px 8px rgba(114, 47, 55, 0.3);
+        }
+
+        /* Wake Lock Indicator */
+        .wake-lock-indicator {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background: var(--burgundy);
+            color: var(--antique-white);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.85rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1002;
+            pointer-events: none;
+        }
+
+        .wake-lock-indicator.visible {
+            opacity: 1;
+        }
+
         .original-photo-section {
             text-align: center;
             padding-top: 1.5rem;
@@ -665,17 +764,19 @@
         .original-photo-link {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.75rem;
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: var(--burgundy);
             text-decoration: none;
-            padding: 0.75rem 1.5rem;
+            padding: 1rem 2rem;
+            min-height: 56px;
             border: 2px solid var(--burgundy);
             border-radius: 100px;
             transition: all 0.3s ease;
             cursor: pointer;
+            touch-action: manipulation;
         }
 
         .original-photo-link:hover {
@@ -1013,13 +1114,23 @@
             <div class="modal-body">
                 <div class="modal-meta" id="modalMeta"></div>
 
+                <div class="scaler-section" id="scalerSection">
+                    <span class="scaler-label">Adjust servings:</span>
+                    <div class="scaler-buttons">
+                        <button class="scaler-btn" data-scale="0.5" onclick="scaleRecipe(0.5)">½×</button>
+                        <button class="scaler-btn active" data-scale="1" onclick="scaleRecipe(1)">1×</button>
+                        <button class="scaler-btn" data-scale="2" onclick="scaleRecipe(2)">2×</button>
+                        <button class="scaler-btn" data-scale="3" onclick="scaleRecipe(3)">3×</button>
+                    </div>
+                </div>
+
                 <div class="modal-section">
-                    <h3>Ingredients</h3>
+                    <h3>Ingredients <span style="font-weight: normal; font-size: 0.9rem; opacity: 0.7;">(tap to check off)</span></h3>
                     <ul class="ingredients-list" id="modalIngredients"></ul>
                 </div>
 
                 <div class="modal-section">
-                    <h3>Instructions</h3>
+                    <h3>Instructions <span style="font-weight: normal; font-size: 0.9rem; opacity: 0.7;">(tap to check off)</span></h3>
                     <ol class="instructions-list" id="modalInstructions"></ol>
                 </div>
 
@@ -1036,6 +1147,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Wake Lock Indicator -->
+    <div class="wake-lock-indicator" id="wakeLockIndicator">☀️ Screen staying on</div>
 
     <!-- Photo Gallery Modal -->
     <div class="photo-gallery-modal" id="photoGalleryModal">
@@ -1166,9 +1280,144 @@
 
         let currentRecipeFile = '';
         let currentRecipeName = '';
+        let currentRecipeIndex = -1;
+        let currentScale = 1;
+        let wakeLock = null;
+
+        // Wake Lock API - keep screen on while cooking
+        async function requestWakeLock() {
+            if ('wakeLock' in navigator) {
+                try {
+                    wakeLock = await navigator.wakeLock.request('screen');
+                    const indicator = document.getElementById('wakeLockIndicator');
+                    indicator.classList.add('visible');
+                    setTimeout(() => indicator.classList.remove('visible'), 2000);
+
+                    wakeLock.addEventListener('release', () => {
+                        wakeLock = null;
+                    });
+                } catch (err) {
+                    console.log('Wake Lock not available:', err);
+                }
+            }
+        }
+
+        async function releaseWakeLock() {
+            if (wakeLock) {
+                await wakeLock.release();
+                wakeLock = null;
+            }
+        }
+
+        // Re-acquire wake lock when page becomes visible again
+        document.addEventListener('visibilitychange', async () => {
+            if (document.visibilityState === 'visible' && document.getElementById('recipeModal').classList.contains('active')) {
+                await requestWakeLock();
+            }
+        });
+
+        // Ingredient scaling - parse and scale quantities
+        function parseQuantity(text) {
+            // Match fractions, mixed numbers, decimals, and whole numbers at the start
+            const patterns = [
+                /^(\d+)\s+(\d+)\/(\d+)/, // Mixed number: 1 1/2
+                /^(\d+)\/(\d+)/,          // Fraction: 1/2
+                /^(\d+\.?\d*)/            // Decimal or whole: 1.5 or 2
+            ];
+
+            for (let pattern of patterns) {
+                const match = text.match(pattern);
+                if (match) {
+                    if (match.length === 4) {
+                        // Mixed number
+                        return { value: parseInt(match[1]) + parseInt(match[2]) / parseInt(match[3]), end: match[0].length };
+                    } else if (match.length === 3 && pattern.source.includes('/')) {
+                        // Fraction
+                        return { value: parseInt(match[1]) / parseInt(match[2]), end: match[0].length };
+                    } else {
+                        // Decimal or whole
+                        return { value: parseFloat(match[1]), end: match[0].length };
+                    }
+                }
+            }
+            return null;
+        }
+
+        function formatQuantity(num) {
+            // Common fractions
+            const fractions = {
+                0.125: '⅛', 0.25: '¼', 0.333: '⅓', 0.375: '⅜',
+                0.5: '½', 0.625: '⅝', 0.666: '⅔', 0.75: '¾', 0.875: '⅞'
+            };
+
+            const whole = Math.floor(num);
+            const frac = num - whole;
+
+            // Find closest fraction
+            let closestFrac = '';
+            let minDiff = 0.1;
+            for (let [val, sym] of Object.entries(fractions)) {
+                const diff = Math.abs(frac - parseFloat(val));
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    closestFrac = sym;
+                }
+            }
+
+            if (minDiff < 0.05) {
+                return whole > 0 ? `${whole} ${closestFrac}` : closestFrac;
+            }
+
+            // Otherwise use decimal, but clean it up
+            if (num === Math.floor(num)) {
+                return num.toString();
+            }
+            return num.toFixed(2).replace(/\.?0+$/, '');
+        }
+
+        function scaleIngredient(text, scale) {
+            const parsed = parseQuantity(text);
+            if (parsed) {
+                const scaledValue = parsed.value * scale;
+                const formattedValue = formatQuantity(scaledValue);
+                return formattedValue + text.substring(parsed.end);
+            }
+            return text;
+        }
+
+        function scaleRecipe(scale) {
+            currentScale = scale;
+
+            // Update button states
+            document.querySelectorAll('.scaler-btn').forEach(btn => {
+                btn.classList.toggle('active', parseFloat(btn.dataset.scale) === scale);
+            });
+
+            // Re-render ingredients with new scale
+            const recipe = recipes[currentRecipeIndex];
+            const ingredientsList = document.getElementById('modalIngredients');
+            ingredientsList.innerHTML = recipe.ingredients.map(ingredient => {
+                const scaled = scale === 1 ? ingredient : scaleIngredient(ingredient, scale);
+                return `<li>${scaled}</li>`;
+            }).join('');
+
+            // Re-attach click handlers
+            attachChecklistHandlers();
+        }
+
+        // Checklist functionality - tap to strike through
+        function attachChecklistHandlers() {
+            document.querySelectorAll('.ingredients-list li, .instructions-list li').forEach(li => {
+                li.onclick = function() {
+                    this.classList.toggle('checked');
+                };
+            });
+        }
 
         function openRecipe(index) {
             const recipe = recipes[index];
+            currentRecipeIndex = index;
+            currentScale = 1;
 
             document.getElementById('modalTitle').textContent = recipe.name;
             document.getElementById('modalCategory').textContent = recipe.category;
@@ -1192,8 +1441,19 @@
             currentRecipeFile = recipe.originalFile;
             currentRecipeName = recipe.name;
 
+            // Reset scaler buttons
+            document.querySelectorAll('.scaler-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.scale === '1');
+            });
+
+            // Attach checklist click handlers
+            attachChecklistHandlers();
+
             document.getElementById('recipeModal').classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // Request wake lock to keep screen on while cooking
+            requestWakeLock();
         }
 
         function openPhotoGallery() {
@@ -1249,6 +1509,8 @@
         function closeModal() {
             document.getElementById('recipeModal').classList.remove('active');
             document.body.style.overflow = '';
+            // Release wake lock when closing recipe
+            releaseWakeLock();
         }
 
         // Close modal on escape key or clicking outside
