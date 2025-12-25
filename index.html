@@ -1502,55 +1502,95 @@
             requestWakeLock();
         }
 
+        let galleryImages = [];
+        let currentGalleryIndex = 0;
+
         function openPhotoGallery() {
-            const galleryImages = document.getElementById('photoGalleryImages');
+            const galleryContainer = document.getElementById('photoGalleryImages');
             const galleryTitle = document.getElementById('photoGalleryTitle');
 
             galleryTitle.textContent = currentRecipeName + ' - Original Recipe Card';
-            galleryImages.innerHTML = '';
+            galleryContainer.innerHTML = '';
+            galleryImages = [];
+            currentGalleryIndex = 0;
 
             // Get the base filename
             const baseName = currentRecipeFile.replace('.jpg', '');
 
-            // Create image elements
-            const createImageItem = (src, label) => {
-                const item = document.createElement('div');
-                item.className = 'photo-gallery-item';
+            // Collect all possible images
+            const possibleImages = [
+                { file: currentRecipeFile, label: 'Front' },
+                { file: baseName + '-back.jpg', label: 'Back' },
+                { file: baseName + '-2.jpg', label: 'Page 2' }
+            ];
 
-                const img = document.createElement('img');
-                img.src = 'web-images/' + src;
-                img.alt = label;
-                img.onerror = function() { this.parentElement.style.display = 'none'; };
+            let loadedCount = 0;
+            const totalToCheck = possibleImages.length;
 
-                const labelDiv = document.createElement('div');
-                labelDiv.className = 'photo-gallery-label';
-                labelDiv.textContent = label;
-
-                item.appendChild(img);
-                item.appendChild(labelDiv);
-                return item;
-            };
-
-            // Add main image
-            galleryImages.appendChild(createImageItem(currentRecipeFile, 'Front'));
-
-            // Try to add back image if it exists
-            const backFile = baseName + '-back.jpg';
-            const imgBack = new Image();
-            imgBack.onload = function() {
-                galleryImages.appendChild(createImageItem(backFile, 'Back'));
-            };
-            imgBack.src = 'web-images/' + backFile;
-
-            // Try to add -2 version if it exists
-            const secondFile = baseName + '-2.jpg';
-            const img2 = new Image();
-            img2.onload = function() {
-                galleryImages.appendChild(createImageItem(secondFile, 'Page 2'));
-            };
-            img2.src = 'web-images/' + secondFile;
+            possibleImages.forEach((imgInfo, index) => {
+                const testImg = new Image();
+                testImg.onload = function() {
+                    galleryImages.push(imgInfo);
+                    loadedCount++;
+                    if (loadedCount === totalToCheck) {
+                        // Sort by original order and display first image
+                        galleryImages.sort((a, b) => possibleImages.indexOf(a) - possibleImages.indexOf(b));
+                        displayGalleryImage();
+                    }
+                };
+                testImg.onerror = function() {
+                    loadedCount++;
+                    if (loadedCount === totalToCheck) {
+                        galleryImages.sort((a, b) => possibleImages.indexOf(a) - possibleImages.indexOf(b));
+                        displayGalleryImage();
+                    }
+                };
+                testImg.src = 'web-images/' + imgInfo.file;
+            });
 
             document.getElementById('photoGalleryModal').classList.add('active');
+        }
+
+        function displayGalleryImage() {
+            const galleryContainer = document.getElementById('photoGalleryImages');
+            galleryContainer.innerHTML = '';
+
+            if (galleryImages.length === 0) return;
+
+            const imgInfo = galleryImages[currentGalleryIndex];
+
+            const item = document.createElement('div');
+            item.className = 'photo-gallery-item';
+
+            const img = document.createElement('img');
+            img.src = 'web-images/' + imgInfo.file;
+            img.alt = imgInfo.label;
+
+            const labelDiv = document.createElement('div');
+            labelDiv.className = 'photo-gallery-label';
+            if (galleryImages.length > 1) {
+                labelDiv.textContent = `${imgInfo.label} (${currentGalleryIndex + 1}/${galleryImages.length}) - Use ← → arrows`;
+            } else {
+                labelDiv.textContent = imgInfo.label;
+            }
+
+            item.appendChild(img);
+            item.appendChild(labelDiv);
+            galleryContainer.appendChild(item);
+        }
+
+        function nextGalleryImage() {
+            if (galleryImages.length > 1) {
+                currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+                displayGalleryImage();
+            }
+        }
+
+        function prevGalleryImage() {
+            if (galleryImages.length > 1) {
+                currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+                displayGalleryImage();
+            }
         }
 
         function closePhotoGallery() {
@@ -1566,11 +1606,22 @@
 
         // Close modal on escape key or clicking outside
         document.addEventListener('keydown', (e) => {
+            const galleryOpen = document.getElementById('photoGalleryModal').classList.contains('active');
+
             if (e.key === 'Escape') {
-                if (document.getElementById('photoGalleryModal').classList.contains('active')) {
+                if (galleryOpen) {
                     closePhotoGallery();
                 } else {
                     closeModal();
+                }
+            }
+
+            // Arrow keys for gallery navigation
+            if (galleryOpen) {
+                if (e.key === 'ArrowRight') {
+                    nextGalleryImage();
+                } else if (e.key === 'ArrowLeft') {
+                    prevGalleryImage();
                 }
             }
         });
