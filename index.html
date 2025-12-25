@@ -82,6 +82,16 @@
             border-bottom: 3px solid var(--gold);
         }
 
+        .header-image {
+            max-width: 200px;
+            max-height: 120px;
+            width: auto;
+            height: auto;
+            margin-bottom: 0.75rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
         header h1 {
             font-family: 'Cormorant Garamond', Georgia, serif;
             font-size: clamp(1.5rem, 4vw, 2.2rem);
@@ -96,11 +106,6 @@
             font-size: 1.1rem;
             color: var(--gold-light);
             font-weight: 500;
-        }
-
-        .header-ornament,
-        .header-decoration {
-            display: none;
         }
 
         /* Controls Bar */
@@ -1021,48 +1026,13 @@
             }
         }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 3rem 2rem;
-            background: var(--cream-dark);
-            border-top: 1px solid var(--cream-dark);
-        }
-
-        footer p {
-            font-family: 'Caveat', cursive;
-            font-size: 1.3rem;
-            color: var(--brown-light);
-        }
-
-        footer .footer-ornament {
-            margin-top: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        footer .footer-ornament span {
-            color: var(--burgundy);
-            opacity: 0.5;
-        }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-ornament">
-            <span class="ornament-line"></span>
-            <span class="ornament-diamond"></span>
-            <span class="ornament-line"></span>
-        </div>
+        <img src="header-image.png" alt="Family Cookbook" class="header-image">
         <h1>Family Recipe Collection</h1>
         <p class="subtitle">Treasured recipes passed down through generations</p>
-        <div class="header-decoration">
-            <span>❧</span>
-            <span>❧</span>
-            <span>❧</span>
-        </div>
     </header>
 
     <div class="controls">
@@ -1093,15 +1063,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>Made with love, one recipe at a time</p>
-        <div class="footer-ornament">
-            <span>◆</span>
-            <span>◆</span>
-            <span>◆</span>
-        </div>
-    </footer>
 
     <!-- Recipe Modal -->
     <div class="modal" id="recipeModal">
