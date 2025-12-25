@@ -1130,11 +1130,19 @@
         }
 
         function filterRecipes() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
             const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
 
+            // Create word boundary regex for full word matching
+            let searchRegex = null;
+            if (searchTerm) {
+                // Escape special regex characters and match whole words only
+                const escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                searchRegex = new RegExp('\\b' + escaped + '\\b', 'i');
+            }
+
             document.querySelectorAll('.recipe-card').forEach(card => {
-                const matchesSearch = card.dataset.searchText.includes(searchTerm);
+                const matchesSearch = !searchTerm || searchRegex.test(card.dataset.searchText);
                 const matchesCategory = activeCategory === 'all' || card.dataset.category === activeCategory;
 
                 card.classList.toggle('hidden', !(matchesSearch && matchesCategory));
