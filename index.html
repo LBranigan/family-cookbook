@@ -1501,16 +1501,19 @@
             }
 
             // Store current recipe file for photo gallery
-            currentRecipeFile = recipe.originalFile;
+            // Use only the first/primary source file
+            currentRecipeFile = recipe.originalFile.split(',')[0].trim();
             currentRecipeName = recipe.name;
 
             // Set up thumbnail images (front and back if available)
             const thumbnailsContainer = document.getElementById('recipeCardThumbnails');
             thumbnailsContainer.innerHTML = '';
 
-            const baseName = recipe.originalFile.replace('.jpg', '');
+            // Handle multiple source files (comma-separated)
+            const primaryFile = recipe.originalFile.split(',')[0].trim();
+            const baseName = primaryFile.replace('.jpg', '').replace('.MP', '');
             const possibleImages = [
-                { file: recipe.originalFile, label: 'Front' },
+                { file: primaryFile, label: 'Front' },
                 { file: baseName + '-back.jpg', label: 'Back' },
                 { file: baseName + '-2.jpg', label: 'Page 2' }
             ];
@@ -1568,8 +1571,8 @@
             currentGalleryIndex = 0;
             requestedStartIndex = startIndex || 0;
 
-            // Get the base filename
-            const baseName = currentRecipeFile.replace('.jpg', '');
+            // Get the base filename (handle .MP.jpg files)
+            const baseName = currentRecipeFile.replace('.jpg', '').replace('.MP', '');
 
             // Collect all possible images
             const possibleImages = [
