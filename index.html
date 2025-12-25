@@ -1242,12 +1242,13 @@
             const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
             const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
 
-            // Create word boundary regex for full word matching
+            // Create regex that matches word starts (prevents "pear" matching "appear")
             let searchRegex = null;
             if (searchTerm) {
-                // Escape special regex characters and match whole words only
+                // Escape special regex characters and match at word boundaries (start of word)
                 const escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                searchRegex = new RegExp('\\b' + escaped + '\\b', 'i');
+                // Match: start of string, or after a space/punctuation, followed by the search term
+                searchRegex = new RegExp('(?:^|[\\s,;:()\\[\\]"\'/])' + escaped, 'i');
             }
 
             document.querySelectorAll('.recipe-card').forEach(card => {
