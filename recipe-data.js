@@ -30,8 +30,8 @@ const recipes = [
       "Take a small glass and butter the bottom, dip in sugar and press the cookies flat.",
       "Place in oven at 350° for 10 minutes or until brown."
     ],
-    "notes": "Oven temperature 350° is written at the top. The card does not include instructions for forming the cookies or the baking time.\n\nThe word 'greased' is underlined on the original card.",
-    "originalFile": "PXL_20251223_173826597.jpg, PXL_20251223_173830131.MP.jpg, PXL_20251223_173831318.jpg"
+    "notes": "Oven temperature 350° is written at the top. The card does not include instructions for forming the cookies or the baking time.",
+    "originalFile": "PXL_20251223_173826597.jpg, PXL_20251223_173830131.MP.jpg"
   },
   {
     "name": "Almond Butter Cookies",
@@ -55,15 +55,10 @@ const recipes = [
       "Add Almond butter - cream.",
       "Add eggs, vanilla, and almond extract - cream.",
       "Add flour, soda, salt mixture and continue mixing.",
-      "Add nuts* and",
-      "Stir with a spoon.",
-      "Roll into large marbles and set on greased cookie sheet.",
-      "Use a sugared glass to press the cookies, flat.",
-      "Bake at 350° for 12-15 minutes.",
-      "Cool on racks."
+      "Add nuts* and"
     ],
-    "notes": "Card is subtitled 'Grandpa Herb Hendricks favorite cookies'. Baking temperature is noted as 350°. A brace next to baking soda and salt is marked 'sift'. The instruction is incomplete. The asterisk after 'nuts' in the instructions likely refers to the 'chopped almonds' ingredient. The amount for almond extract was corrected from 1/2 tsp to 1 tsp on the card.\n\nA note indicates 'floured fork' was crossed out and replaced with 'sugared glass'. The baking time '12-15' is circled; another time below it is heavily crossed out. Other notes on the card include: '*chopped in nut chopping jar', '48 cookies/batch', and '139 calories/cookie'.",
-    "originalFile": "PXL_20251223_172014538.jpg, PXL_20251223_172017350.jpg"
+    "notes": "Card is subtitled 'Grandpa Herb Hendricks favorite cookies'. Baking temperature is noted as 350°. A brace next to baking soda and salt is marked 'sift'. The instruction is incomplete. The asterisk after 'nuts' in the instructions likely refers to the 'chopped almonds' ingredient. The amount for almond extract was corrected from 1/2 tsp to 1 tsp on the card.",
+    "originalFile": "PXL_20251223_172014538.jpg"
   },
   {
     "name": "Apple Pie",
@@ -182,13 +177,10 @@ const recipes = [
     ],
     "instructions": [
       "Blend together first ~9 ingredients, fold in remaining and salt to taste.",
-      "Bake 400° 30' until bubbly & browned.",
-      "of wrapper (x). Fold wrapper over filling starting with side (1). Wet tip (4) with water/cornstarch to seal!",
-      "Heat ~1 1/2 - 2 cups corn oil in small frying pan to medium-high heat (OR use deep fryer).",
-      "Fry for ~3 min on each side until golden brown."
+      "Bake 400° 30' until bubbly & browned."
     ],
-    "notes": "*Note can substitute pepper jack cheese for mozzarella. Original spelling of 'mayonaise' preserved.\n\nCard has a decorative 'directions' heading. It includes a hand-drawn diagram showing how to fold a wrapper, with points labeled 1, 2, 3, 4, and x in the center. The text starts mid-sentence, indicating it's a continuation. A final note at the bottom reads: 'Can freeze uncooked spring rolls for several months'.",
-    "originalFile": "PXL_20251223_172321782.jpg, PXL_20251223_172311990.jpg"
+    "notes": "*Note can substitute pepper jack cheese for mozzarella. Original spelling of 'mayonaise' preserved.",
+    "originalFile": "PXL_20251223_172321782.jpg"
   },
   {
     "name": "Artichoke Jalapeno Cream Cheese Dip",
@@ -234,14 +226,10 @@ const recipes = [
       "Blend together first 8 ingredients, fold in remaining.",
       "Salt to taste.",
       "Place in 8x8\" baking pan or casserole dish.",
-      "Bake at 400°F for 20 minutes until bubbly and browned.",
-      "[Cook for a] few minutes until aromatic then add chicken broth.",
-      "Mix thoroughly.",
-      "If using for empanadas - cool completely before filling pastries.",
-      "If using for tacos or burritos, include cheese, salsa, lettuce when filling."
+      "Bake at 400°F for 20 minutes until bubbly and browned."
     ],
-    "notes": "Recipe metadata: SERVES: 8-10, TIME: 30', PREHEAT OVEN: 400°F. Pre-printed mark: © 321done.com.\nThe first instruction appears to be a continuation of a previous step. The word 'directions' is treated as a header for the instructions section.\nThis appears to be the back of a recipe card, containing only the directions. The instruction 'Place in 8x8\" baking pan or casserole dish' was inserted with a hand-drawn arrow, indicating a correction to the flow. The baking time '20\"' is interpreted as 20 minutes.\n\nThe first instruction appears to be a continuation of a previous step. The word 'directions' is treated as a header for the instructions section.",
-    "originalFile": "PXL_20251223_172215325.MP.jpg, artichoke-jalapeno-cream-cheese-dip-2.jpg, PXL_20251223_172220990.MP.jpg, PXL_20251223_172204215.MP.jpg"
+    "notes": "Recipe metadata: SERVES: 8-10, TIME: 30', PREHEAT OVEN: 400°F. Pre-printed mark: © 321done.com.",
+    "originalFile": "PXL_20251223_172215325.MP.jpg, artichoke-jalapeno-cream-cheese-dip-2.jpg"
   },
   {
     "name": "Asian Chicken Lettuce Wraps",
@@ -337,22 +325,13 @@ const recipes = [
       "2 tbs Chocolate syrup",
       "1-1/2 cup whiskey",
       "1/2 tsp Coconut extract",
-      "1 tsp vanilla",
-      "Bee's Knees",
-      "2 oz gin",
-      "3/4 oz fresh lemon juice",
-      "1/2 oz honey syrup",
-      "Tom Collins",
-      "2 oz gin",
-      "3/4 oz fresh lemon juice",
-      "1/2 oz simple syrup",
-      "~ 2 oz club soda"
+      "1 tsp vanilla"
     ],
     "instructions": [
       "Blend"
     ],
-    "notes": "A code 'C46 MFP' is written in the top right corner. The card contains a title, a full ingredient list, and a single-word instruction, making it a complete, simple recipe, likely for a homemade liqueur.\n\nThis card lists ingredients for two separate cocktail recipes: Bee's Knees and Tom Collins. A note, 'Shake', is written with a brace next to the first three ingredients for the Tom Collins. The '~' symbol before '2 oz club soda' likely means 'approximately'. As this card primarily contains titles and ingredients with only a minor instructional note, it is classified as a 'front' card.",
-    "originalFile": "PXL_20251223_230424989.jpg, PXL_20251223_230408185.jpg"
+    "notes": "A code 'C46 MFP' is written in the top right corner. The card contains a title, a full ingredient list, and a single-word instruction, making it a complete, simple recipe, likely for a homemade liqueur.",
+    "originalFile": "PXL_20251223_230424989.jpg"
   },
   {
     "name": "Baked Artichokes with Gorgonzola",
@@ -453,6 +432,7 @@ const recipes = [
       "Add shallots and cook until translucent and carmelized.",
       "Remove to bowl.",
       "Add butter and cook mushrooms until cooked.",
+      "Remove to bowl.",
       "Add drizzle of oil and cook/brown pork.",
       "Chops ~3' per side until nicely browned.",
       "Add rosemary, vinegar, and soy sauce to pan, flip pork chops to coat.",
@@ -609,14 +589,10 @@ const recipes = [
       "Add 1 cup broth + Cognac to pot, boil and reduce ~8 min, scrape up meat bits.",
       "Return meat & veg. and juices to pot. Add 2 cups broth and wine and remaining ingredients. Bring to boil & stir.",
       "Put in Oven for 1 hr. 30' until tender.",
-      "Remove liquid, reduce to 2/3 - 3/4 cup ~40 minutes of boiling, return to meat - serve.",
-      "Take the Roast out at 1:00 let it sit to warm up to room temp",
-      "Preheat oven to 450°F, turn knob to bake. Uncover roast and put in oven at 3:45",
-      "After 15 minutes, turn oven temp. down to 325°",
-      "Cook for about 2 hrs or until internal temp. is 140°-150°"
+      "Remove liquid, reduce to 2/3 - 3/4 cup ~40 minutes of boiling, return to meat - serve."
     ],
-    "notes": "Source attribution: 'Bon Appetit'. Serving size: '8 servings'. 'd. brown sugar' likely means dark brown sugar. The word 'Thyme' is partially obscured by a dark stain.\n\nThis card contains only cooking instructions, likely for a roast. It includes specific times (1:00, 3:45) for a particular meal schedule. The number '3250' is written below the '325°' temperature, likely as a typo or an emphatic way of writing 325 degrees.",
-    "originalFile": "PXL_20251223_222846059.jpg, PXL_20251223_222848523.jpg, PXL_20251223_222859339.jpg"
+    "notes": "Source attribution: 'Bon Appetit'. Serving size: '8 servings'. 'd. brown sugar' likely means dark brown sugar. The word 'Thyme' is partially obscured by a dark stain.",
+    "originalFile": "PXL_20251223_222846059.jpg, PXL_20251223_222848523.jpg"
   },
   {
     "name": "Beef Bourguignon",
@@ -701,7 +677,7 @@ const recipes = [
       "Heat pan again with little oil.",
       "Brown beef, then pour vegetables in. (handwritten note: quickly)"
     ],
-    "notes": "This card contains three distinct recipes. The primary JSON fields are populated with the first recipe, 'Beef with Tomato'. A typed line 'meatball {' appears before the cornstarch, sugar, and black pepper, likely indicating these are for a beef coating or marinade. The other recipes on the card are:\n\nRecipe 2: Almond Cookies\nIngredients: Flour 2 C, Baking soda 1/3t, Sugar 1 C, Almond extract 1 T, salt 1/2 t, shortening 1 C, 2 eggs, beaten.\nInstructions: Mix dried ingredients, cut oil in, then add egg.\n\nRecipe 3: Wonton Soup (filling ingredients)\nIngredients: pork - ground 1/2 lb, soy sauce 1T, sesame oil 1/2 tsp, pepper, wine 1T, green onion 1-2.",
+    "notes": "This card contains three distinct recipes. The primary JSON fields are populated with the first recipe, 'Beef with Tomato'. A typed line 'meatball {' appears before the cornstarch, sugar, and black pepper, likely indicating these are for a beef coating or marinade. The other recipes on the card are: \n\nRecipe 2: Almond Cookies\nIngredients: Flour 2 C, Baking soda 1/3t, Sugar 1 C, Almond extract 1 T, salt 1/2 t, shortening 1 C, 2 eggs, beaten.\nInstructions: Mix dried ingredients, cut oil in, then add egg.\n\nRecipe 3: Wonton Soup (filling ingredients)\nIngredients: pork - ground 1/2 lb, soy sauce 1T, sesame oil 1/2 tsp, pepper, wine 1T, green onion 1-2.",
     "originalFile": "PXL_20251223_230500877.jpg"
   },
   {
@@ -1309,14 +1285,10 @@ const recipes = [
       "1 tsp onion powder"
     ],
     "instructions": [
-      "In saucepan mix:",
-      "Add all cereals, nuts, etc in large roasting pan.",
-      "Drizzle and mix in the spices and liquid component.",
-      "Cook at 250° for 1 hour, mixing every 15'.",
-      "Cool on newspaper before storing."
+      "In saucepan mix:"
     ],
-    "notes": "Preheat oven to 250°. Numerous ingredient quantities have been modified. Original crossed-out amounts include: 6 cups Cheerios; 1 cups Mixed nuts (omitted entirely); 16 Tbs butter; 1/2 cup Worcestershire Sauce; 6 tsp Lawry's seasoning salt; 1 3/4 tsp garlic powder/salt; 1 1/4 tsp onion powder. The quantity of peanuts was also changed, likely from 1 cup to 2 cups. '2 cups bagel bites' was added to the end of the dry ingredients list.\n\nCard is pre-printed with the heading 'directions'. The notation '15'' is interpreted as '15 minutes'.",
-    "originalFile": "PXL_20251223_172109618.MP.jpg, PXL_20251223_172113410.jpg"
+    "notes": "Preheat oven to 250°. Numerous ingredient quantities have been modified. Original crossed-out amounts include: 6 cups Cheerios; 1 cups Mixed nuts (omitted entirely); 16 Tbs butter; 1/2 cup Worcestershire Sauce; 6 tsp Lawry's seasoning salt; 1 3/4 tsp garlic powder/salt; 1 1/4 tsp onion powder. The quantity of peanuts was also changed, likely from 1 cup to 2 cups. '2 cups bagel bites' was added to the end of the dry ingredients list.",
+    "originalFile": "PXL_20251223_172109618.MP.jpg"
   },
   {
     "name": "Chicken and Rice Casserole",
@@ -1487,16 +1459,7 @@ const recipes = [
       "1/4 cup chopped pimento",
       "2 tbsp minced parsley",
       "3/4 tsp salt",
-      "1/4 tsp pepper",
-      "1# Pinto Beans",
-      "2 large Onions diced or 2 Tblsp dehydrated onions",
-      "3/4 tsp garlic minced",
-      "1 4oz Can Green Chiles diced",
-      "1 6oz Can Tree Tomatoes",
-      "1/2 tsp Cumin seed",
-      "salt (to cover beans for soaking)",
-      "2 tbsp Chili Powder",
-      "1 to 2 poynds diced fried ground beef"
+      "1/4 tsp pepper"
     ],
     "instructions": [
       "Make 1 cup bouillon.",
@@ -1505,13 +1468,10 @@ const recipes = [
       "Cook over medium heat until mixture thickens.",
       "Add rice, chicken, pimento, parsley, salt and pepper.",
       "Turn into 2-quart casserole.",
-      "Bake at 350°F for 25 to 30 minutes, until lightly browned.",
-      "Soak beans in water to cover with salt.",
-      "Beans can be soaked over night or use the quick cooking time.",
-      "Add rest of ingredients and add 2 tbsp Chili Powder and 1 to 2 poynds diced fried ground beef."
+      "Bake at 350°F for 25 to 30 minutes, until lightly browned."
     ],
-    "notes": "Card includes baking temperature: 'Oven 350 F'. An arrow points down and to the right, suggesting the instructions continue on the back of the card. A small stain is present but does not obscure text.\n\nCard is headed 'Here's what's cooking... Recipe from the kitchen of Verna Kaupp's'. The last name is difficult to decipher. The word 'pounds' is spelled 'poynds'. 'Tree Tomatoes' might be a specific brand or type of tomato.",
-    "originalFile": "PXL_20251223_225839689.jpg, PXL_20251223_225842937.jpg, PXL_20251223_225854889.jpg"
+    "notes": "Card includes baking temperature: 'Oven 350 F'. An arrow points down and to the right, suggesting the instructions continue on the back of the card. A small stain is present but does not obscure text.",
+    "originalFile": "PXL_20251223_225839689.jpg, PXL_20251223_225842937.jpg"
   },
   {
     "name": "CHINESE CHICKEN SALAD",
@@ -2166,19 +2126,10 @@ const recipes = [
       "Add vanilla and eggs - 1 at a time.",
       "Add flour mixture a little at a time - Mix well.",
       "Divide dough into 2, shape into flat disks.",
-      "Wrap in Saran wrap.",
-      "refrigerate 2-24 hrs.",
-      "Remove from fridge and warm for 5 minutes before rolling out on floured surface.",
-      "Roll to 1/4 - 1/2\" thick. Thicker = softer.",
-      "Cut w/ cookie cutters.",
-      "Place on parchment covered cookie sheet.",
-      "Cook at 350F for 9-10 minutes.",
-      "Remove and let sit on cookie sheet for 5 minutes before transferring to cooling rack.",
-      "Cool completely.",
-      "Frosting: 4 cups powdered sugar, 2 1/2 Tbs light corn syrup, 3-4 Tbs milk, RT, 1/2 tsp vanilla, food coloring OR 4 cups (1lb) powdered sugar, 5 Tbs warm water, 3 Tbs Meringue powder. Add extra water to make thinner + food coloring."
+      "Wrap in Saran wrap."
     ],
-    "notes": "Note in top right corner: 'yummy!'. Source attribution: 'Laura @ Joy food SUNSHINE'. Preheat oven to 350°F. 'RT' next to eggs likely means 'Room Temperature'. The instructions seem to end abruptly and may continue on another card.\n\nTop of card note: 'If just deco w/ sprinkles brush w/ milk before baking'. The author wrote 'cooling rack' above 'cookie sheet' as a correction. 'RT' next to milk likely means Room Temperature.",
-    "originalFile": "PXL_20251223_172000484.MP.jpg, PXL_20251223_172004238.jpg"
+    "notes": "Note in top right corner: 'yummy!'. Source attribution: 'Laura @ Joy food SUNSHINE'. Preheat oven to 350°F. 'RT' next to eggs likely means 'Room Temperature'. The instructions seem to end abruptly and may continue on another card.",
+    "originalFile": "PXL_20251223_172000484.MP.jpg"
   },
   {
     "name": "Dee's Bailey's",
@@ -2527,7 +2478,7 @@ const recipes = [
   {
     "name": "Flaky Pastry",
     "category": "Cookies",
-    "yield": "3 - 9\" crusts",
+    "yield": "",
     "ingredients": [
       "4 C. all-purpose flour",
       "3/4 C. vegetable shortening (not oil)",
@@ -2540,13 +2491,10 @@ const recipes = [
     ],
     "instructions": [
       "Mix with fork, first 4 ingredients.",
-      "In another bowl, 1/2 C. Water and remaining",
-      "Put ingredients together.",
-      "Chill at least 15 minutes.",
-      "Roll out between wax paper."
+      "In another bowl, 1/2 C. Water and remaining"
     ],
-    "notes": "This card contains the title, ingredients, and the beginning of the instructions. Faint text above the title may read 'Husband's best'. The original amount of shortening was '2 2/3 C.' but was crossed out. The '3/4 C. shortening' and '+ 1/2 cup butter' are handwritten modifications. For the water measurement, '[3/4]' is written above '1/2 cup'. The instructions appear to be incomplete and likely continue on the back of the card.\n\nYields: 3 - 9\" crusts. (A word, likely 'double', is crossed out). Keeps in refrigerator 3 days. Freezes indefinitely. A parenthetical note reads: (If 1.5x recipe it will make 4 crusts). Original spellings include 'ingrediants' and 'indefinately'.",
-    "originalFile": "PXL_20251223_172041838.jpg, PXL_20251223_172046377.jpg"
+    "notes": "This card contains the title, ingredients, and the beginning of the instructions. Faint text above the title may read 'Husband's best'. The original amount of shortening was '2 2/3 C.' but was crossed out. The '3/4 C. shortening' and '+ 1/2 cup butter' are handwritten modifications. For the water measurement, '[3/4]' is written above '1/2 cup'. The instructions appear to be incomplete and likely continue on the back of the card.",
+    "originalFile": "PXL_20251223_172041838.jpg"
   },
   {
     "name": "Flaky Pie Pastry",
@@ -2781,7 +2729,7 @@ const recipes = [
   {
     "name": "Fresh Strawberry Pie",
     "category": "Desserts",
-    "yield": "~24 with some wastage'",
+    "yield": "",
     "ingredients": [
       "1 baked 9\" pie shell",
       "1 qt. strawberries",
@@ -2798,20 +2746,10 @@ const recipes = [
       "Strain & add enough water to juice to measure 1 1/2 c.",
       "Combine cornstarch, sugar, salt to above juice & boil 2-3 min till thick & clear.",
       "Remove from heat & add lemon juice & butter.",
-      "Cool. Pour over berries in shell.",
-      "Melt butter in large mixing bowl in microwave.",
-      "Add ingredients in order given.",
-      "Pour into pie shell.",
-      "Bake at 425°F for 10 minutes, turn down to 375°F for 40 minutes.",
-      "Cover with foil the last 15 minutes (the edges).",
-      "For mini pies; bake in cupcake tin leaving every-other space open.",
-      "Use ~2 Tbs filling for each.",
-      "Bake 25 minutes at 375°F.",
-      "Let cool in pan.",
-      "Turn each pie a few times during cooling to ensure non-sticking."
+      "Cool. Pour over berries in shell."
     ],
-    "notes": "This appears to be the front of a recipe card, listing the title and ingredients. The main cooking instructions are likely on the back. Card has a printed code Z30 in the bottom left and a copyright '© Marlene Sff' in the bottom right.\n\nThe baking time for the large pie was changed from 50 minutes to 40 minutes. For the mini pies, the note says it 'makes ~24 with some wastage'.",
-    "originalFile": "PXL_20251223_210507497.MP.jpg, PXL_20251223_210510044.jpg, PXL_20251223_210528534.jpg"
+    "notes": "This appears to be the front of a recipe card, listing the title and ingredients. The main cooking instructions are likely on the back. Card has a printed code Z30 in the bottom left and a copyright '© Marlene Sff' in the bottom right.",
+    "originalFile": "PXL_20251223_210507497.MP.jpg, PXL_20251223_210510044.jpg"
   },
   {
     "name": "Frying Pan BBQ Chicken",
@@ -4049,9 +3987,7 @@ const recipes = [
       "1 cup [fruit?] sugar",
       "3/4 cup water",
       "1 package Ocean Spray cranberries",
-      "12 once",
-      "1/2 teaspoon grated ginger",
-      "1/2 teaspoon Cinnamon"
+      "12 once"
     ],
     "instructions": [
       "Mix Sugar and water.",
@@ -4060,8 +3996,8 @@ const recipes = [
       "cool at room temperature.",
       "Put in refrigerator."
     ],
-    "notes": "The card contains a complete, simple recipe. The word following '1 cup' in the ingredients is difficult to decipher but appears to be 'fruit'. A note '12 once' is written below the cranberries ingredient; 'once' is likely a misspelling of 'ounce', indicating the package size.\n\nThe card lists these ingredients under the heading 'Optional'. The word before 'ginger' is slightly unclear but interpreted as 'grated'.",
-    "originalFile": "PXL_20251223_220547018.jpg, PXL_20251223_220550047.jpg"
+    "notes": "The card contains a complete, simple recipe. The word following '1 cup' in the ingredients is difficult to decipher but appears to be 'fruit'. A note '12 once' is written below the cranberries ingredient; 'once' is likely a misspelling of 'ounce', indicating the package size.",
+    "originalFile": "PXL_20251223_220547018.jpg"
   },
   {
     "name": "Kasia's Crab Cakes",
@@ -4336,14 +4272,10 @@ const recipes = [
       "3. Off heat, stir in butter until melted and incorporated. Strain through fine-mesh strainer into medium bowl and press plastic wrap directly on surface. Refrigerate curd until it is firm and spreadable, about 1 1/2 hours. (Curd can be refrigerated, with plastic wrap pressed directly on surface, for up to 3 days.)",
       "--- STRAWBERRY TOPPING ---",
       "1. Toss strawberries, sugar, together in bowl and let sit, stirring occasionally, until berries have released juice and sugar has dissolved, 30 minutes.",
-      "2. Process jam in food processor until smooth, about 8 seconds. Simmer in small saucepan over medium heat until no longer foamy, about 3 minutes. Stir jam and lemon juice into strawberries and cool to room temperature before",
-      "Sift flour, soda, salt together and set aside.",
-      "Cream shortening, sugar and eggs until fluffy.",
-      "Add flour mixture alternately with bananas and liquid*.",
-      "Bake in three (double batch) greased bread pans at 350° for 60 to 70 minutes."
+      "2. Process jam in food processor until smooth, about 8 seconds. Simmer in small saucepan over medium heat until no longer foamy, about 3 minutes. Stir jam and lemon juice into strawberries and cool to room temperature before"
     ],
-    "notes": "This is a printed page containing two complete recipes, not a handwritten card. \nLemon Curd description: 'This tangy curd makes an easy topping for scones, pound cake, shortbread, and many other simple desserts. It's also nice spread on buttered toast.' (The word 'toast' is handwritten). \nStrawberry Topping note: 'This topping is best the day it is made. Use frozen strawberries in this recipe.'\nHandwritten annotations for Lemon Curd ingredients: A '2x' is written next to the ingredient block. '1.5 -> 3/4' is written next to the sugar. 'Pinch salt' is circled. '4+6 -> 8' is written next to the eggs line. \nThe last sentence of the Strawberry Topping instructions is cut off.\n\n°Can substitute 3/4 c. shortening with 1/2 shortening and 1/2 margarine. The asterisk after 'liquid' likely refers to a note on the ingredients card.",
-    "originalFile": "PXL_20251223_215737501.jpg, PXL_20251223_215701520.jpg"
+    "notes": "This is a printed page containing two complete recipes, not a handwritten card. \n\nLemon Curd description: 'This tangy curd makes an easy topping for scones, pound cake, shortbread, and many other simple desserts. It's also nice spread on buttered toast.' (The word 'toast' is handwritten). \n\nStrawberry Topping note: 'This topping is best the day it is made. Use frozen strawberries in this recipe.'\n\nHandwritten annotations for Lemon Curd ingredients: A '2x' is written next to the ingredient block. '1.5 -> 3/4' is written next to the sugar. 'Pinch salt' is circled. '4+6 -> 8' is written next to the eggs line. \n\nThe last sentence of the Strawberry Topping instructions is cut off.",
+    "originalFile": "PXL_20251223_215737501.jpg"
   },
   {
     "name": "Lemon Thins",
@@ -4573,13 +4505,10 @@ const recipes = [
       "- Ground meat .. 2 days",
       "- Roasts .. 3 days",
       "- Chops and steaks .. 2 days",
-      "Cooked meats should be cooled slightly and refrigerated quickly.",
-      "gravy, being sure it is a steaming point.",
-      "Turn to low ht. for 10 min.",
-      "Don't peek"
+      "Cooked meats should be cooled slightly and refrigerated quickly."
     ],
-    "notes": "This is a pre-printed reference chart, not a handwritten recipe. It provides a guide for roasting various cuts of meat and tips for meat storage.\n\nThis appears to be the continuation of a recipe. The abbreviation 'ht.' likely stands for 'heat'.",
-    "originalFile": "PXL_20251223_221611110.jpg, PXL_20251223_221603190.jpg"
+    "notes": "This is a pre-printed reference chart, not a handwritten recipe. It provides a guide for roasting various cuts of meat and tips for meat storage.",
+    "originalFile": "PXL_20251223_221611110.jpg"
   },
   {
     "name": "Meat Loaf",
@@ -4966,12 +4895,11 @@ const recipes = [
       "Pre-cook squash and carrots in the microwave for 1 1/2' on high.",
       "Combine all ingredients in a 8x8 baking dish.",
       "Bake at 400F for 30-",
-      "Place on oiled roasting pan for crisper outsides.",
-      "Bake at 400°F for 30-",
-      "Place on an oiled roasting pan for crisper outsides."
+      "OR",
+      "Place on oiled roasting pan for crisper outsides."
     ],
-    "notes": "Serves: 6. Time: ~60'. Preheat Oven: 400°F. The card has a 'directions' heading, but no instructions are listed, indicating this is likely the front of the card.\n\nCard is labeled 'directions'. The microwave time is written as '1 1/2'' which likely means 1 and a half minutes. The baking time is written as '30-', likely meaning 30 minutes.",
-    "originalFile": "PXL_20251223_220405931.jpg, PXL_20251223_220408747.jpg, PXL_20251223_220411328.MP.jpg"
+    "notes": "Serves: 6. Time: ~60'. Preheat Oven: 400°F. The card has a 'directions' heading, but no instructions are listed, indicating this is likely the front of the card.",
+    "originalFile": "PXL_20251223_220405931.jpg, PXL_20251223_220408747.jpg"
   },
   {
     "name": "MRS. FIELD'S COOKIES",
@@ -5118,7 +5046,7 @@ const recipes = [
   {
     "name": "Nestlé Toll House Choc. Chip Cookies",
     "category": "Cookies",
-    "yield": "3 dozen (the number '5' was crossed out and '3' written below it)",
+    "yield": "",
     "ingredients": [
       "2 1/4 cup flour",
       "1 tsp baking soda",
@@ -5131,23 +5059,14 @@ const recipes = [
       "1 cup chopped nuts",
       "1-1/2 cups choc. chips"
     ],
-    "instructions": [
-      "Preheat oven to 375°F.",
-      "Cream together butter and sugars.",
-      "Add vanilla.",
-      "Add eggs one at a time, beat until creamy.",
-      "Add flour mixture, beating well after each addition.",
-      "Stir in nuts and choc. chips.",
-      "Drop in tablespoon fulls onto cookie sheet.",
-      "Bake at 375°F for ~10'."
-    ],
-    "notes": "Card includes shorthand instructions written alongside the ingredients. A brace groups flour, baking soda, and salt with the note 'Combine in bowl'. A modification in blue ink for the baking soda reads '- for bars + 1/4 tsp'. A second brace groups butter, white sugar, and brown sugar with the note 'Cream'. An arrow indicates vanilla and eggs should be 'add 2nd'. 'RT' next to eggs likely means 'Room Temperature'.\n\nMakes 3 dozen (the number '5' was crossed out and '3' written below it). Alternate instructions written in a different pen: \"For bars: spray a 1/4 sheet then spread cookie dough with wet fingers until evenly distributed. cook at 375° 20-\". The '10'' likely means 10 minutes, and '20-' likely means 20 minutes.",
-    "originalFile": "PXL_20251223_172008048.jpg, PXL_20251223_172010267.jpg"
+    "instructions": [],
+    "notes": "Card includes shorthand instructions written alongside the ingredients. A brace groups flour, baking soda, and salt with the note 'Combine in bowl'. A modification in blue ink for the baking soda reads '- for bars + 1/4 tsp'. A second brace groups butter, white sugar, and brown sugar with the note 'Cream'. An arrow indicates vanilla and eggs should be 'add 2nd'. 'RT' next to eggs likely means 'Room Temperature'.",
+    "originalFile": "PXL_20251223_172008048.jpg"
   },
   {
     "name": "Never-Fail Sugar Cookies",
     "category": "Cookies",
-    "yield": "5 dozen",
+    "yield": "",
     "ingredients": [
       "4 c. flour",
       "1 1/2 c. sugar",
@@ -5168,8 +5087,8 @@ const recipes = [
       "Bake 430° 10 min.",
       "Garnish with sugar."
     ],
-    "notes": "The amount for milk appears to have been corrected on the card; '2/3' is crossed out and '1/3' is written next to it. The baking temperature of 430° is transcribed as written, although it is unusually high for this type of cookie.\n\nYield 5 dozen. This card is mostly blank or obscured by a large stain. It may be the back of a recipe card or a continuation card containing only the yield information.",
-    "originalFile": "PXL_20251223_205427454.jpg, PXL_20251223_205430861.jpg"
+    "notes": "The amount for milk appears to have been corrected on the card; '2/3' is crossed out and '1/3' is written next to it. The baking temperature of 430° is transcribed as written, although it is unusually high for this type of cookie.",
+    "originalFile": "PXL_20251223_205427454.jpg"
   },
   {
     "name": "OAT BREAD",
@@ -5504,18 +5423,10 @@ const recipes = [
       "When pork is done - remove from oven and pour any accumulated juice into sauce.",
       "Tent pork while finish sauce. Reduce sauce to 1/3 cup (2').",
       "Turn off heat, whisk in 3 Tbs butter and mustard. Season w/ salt/pepper.",
-      "Spoon over sliced pork.",
-      "Combine beef, egg white, cornstarch, Mix well",
-      "Heat 1 Tbs oil in skillet, sauté green beans for 2-3 minutes",
-      "then add 1/4 cup water, put lid on and steam until al dente. Remove to bowl.",
-      "Heat 2 Tbs oil in skillet, quick cook beef in batches, transfer to bowl.",
-      "Add scallions, sauté 1 minute",
-      "Add green beans and meat back",
-      "Add sauce",
-      "Leave on heat until bubbly and thoroughly mixed."
+      "Spoon over sliced pork."
     ],
-    "notes": "Source attribution: Cook's Illus. (Cook's Illustrated). Serves: 6. Time: 30-45. Preheat Oven: 400°. A handwritten bracket note indicates the salt and pepper are used to 'Season meat'. The card's 'directions' column is used to list ingredients for the 'Pan Sauce', not cooking instructions.\n\nSource attribution at the bottom: 'Long Life Chinese Cookbook' p113. This appears to be the instructions side of a recipe card, as it refers to ingredients like 'sauce' without listing their components.",
-    "originalFile": "PXL_20251223_221726234.jpg, PXL_20251223_221729056.jpg, PXL_20251223_221701428.jpg"
+    "notes": "Source attribution: Cook's Illus. (Cook's Illustrated). Serves: 6. Time: 30-45. Preheat Oven: 400°. A handwritten bracket note indicates the salt and pepper are used to 'Season meat'. The card's 'directions' column is used to list ingredients for the 'Pan Sauce', not cooking instructions.",
+    "originalFile": "PXL_20251223_221726234.jpg, PXL_20251223_221729056.jpg"
   },
   {
     "name": "PANCAKES",
@@ -5608,17 +5519,10 @@ const recipes = [
       "Elbows: 8 oz. (uncooked), cook 7-9 min., yields 4 cups cooked pasta.",
       "Spaghetti: 8 oz. (uncooked), cook 8-10 min., yields 3-4 cups cooked pasta.",
       "Medium Noodles: 8 oz. (uncooked), cook 7-9 min., yields 2 1/4 cups cooked pasta.",
-      "Ziti: 8 oz. (uncooked), cook 10 min., yields 6 cups cooked pasta.",
-      "Place noodles in large bowl, cover with hot water and let stand for 30'.",
-      "Toast peanuts until golden.",
-      "Cook egg as an omelet, cut into strips, set aside.",
-      "Add oil to skillet and saute chicken and garlic.",
-      "Add sauce and noodles to pan and cook together until noodles are soft.",
-      "Towards end of cooking add bean sprouts, scallions, egg and peanuts.",
-      "Serve"
+      "Ziti: 8 oz. (uncooked), cook 10 min., yields 6 cups cooked pasta."
     ],
-    "notes": "This card is a printed reference chart, not a handwritten recipe. The content is a complete informational guide. Note on card: '* Precooked rices - follow package directions'.\n\nCard is explicitly labeled 'directions'. The notation '30'' likely refers to 30 minutes.",
-    "originalFile": "PXL_20251223_221306322.jpg, PXL_20251223_221300001.jpg"
+    "notes": "This card is a printed reference chart, not a handwritten recipe. The content is a complete informational guide. Note on card: '* Precooked rices - follow package directions'.",
+    "originalFile": "PXL_20251223_221306322.jpg"
   },
   {
     "name": "PASTRY MAKING TIPS",
@@ -5840,12 +5744,7 @@ const recipes = [
       "1 1/2 cups milk",
       "1 1/2 cups all-purpose flour",
       "3/4 tsp salt",
-      "3 Tbs melted butter",
-      "6 large eggs",
-      "2 1/4 cups milk",
-      "2 1/4 cups flour",
-      "1/4 tsp salt",
-      "4 1/2 Tbs melted butter"
+      "3 Tbs melted butter"
     ],
     "instructions": [
       "Combine together, let sit for 30' RT (Room Temperature) or up to 24 hrs in the fridge.",
@@ -5856,8 +5755,8 @@ const recipes = [
       "Cook at 450° 15'.",
       "Turn down to 350° for 5' more until puffed and golden brown."
     ],
-    "notes": "Card specifies 'makes 12'. Top left corner notes '450°'. A separate line before the heating instructions says: '+ PAM to spray pan (OR spray and then heat)'. The name in parentheses after the title appears to be 'Sencus eats', but is not perfectly clear.\n\nA note at the top reads '(1.5x)', likely indicating this version of the recipe has been scaled up by 1.5 times the original amount.",
-    "originalFile": "PXL_20251223_172719592.MP.jpg, PXL_20251223_172725281.jpg"
+    "notes": "Card specifies 'makes 12'. Top left corner notes '450°'. A separate line before the heating instructions says: '+ PAM to spray pan (OR spray and then heat)'. The name in parentheses after the title appears to be 'Sencus eats', but is not perfectly clear.",
+    "originalFile": "PXL_20251223_172719592.MP.jpg"
   },
   {
     "name": "Porcini Rubbed Steak",
@@ -5955,16 +5854,10 @@ const recipes = [
       "Add all other ingredients and cook for about 4 hours on simmer (cover bringing to a boil).",
       "Turn meat every 30-60', so every side gets cooked in soy sauce.",
       "Meat should just fall apart.",
-      "Skim fat from juices and serve [unclear text].",
-      "In an electric fry pan, add onion, garlic, each and pepper. Brown over medium heat, stirring constantly.",
-      "Add green pepper and rice and brown lightly.",
-      "Add parsley, tomatoes, paprika, cayenne and oil. Mix together lightly.",
-      "Add 1 1/2 cups boiling water.",
-      "Cover tightly and steam 25 minutes.",
-      "Place cheese slices on top and cover for a few minutes or until cheese is melted."
+      "Skim fat from juices and serve [unclear text]."
     ],
-    "notes": "Card is heavily stained, making some words difficult to read. The word 'garlic' after 'cloves' is obscured by a stain and inferred from context. The type of oil in '1 Tbs ___ oil' is also obscured by a heavy stain, but appears to be 'garlic'.\n\nSource attribution: Pauline Ogan. The phrase 'each and pepper' in the first step is transcribed as written, but the word 'each' is contextually unusual; 'salt' may have been intended.",
-    "originalFile": "PXL_20251223_224308428.jpg, PXL_20251223_224312032.jpg, PXL_20251223_224301218.jpg"
+    "notes": "Card is heavily stained, making some words difficult to read. The word 'garlic' after 'cloves' is obscured by a stain and inferred from context. The type of oil in '1 Tbs ___ oil' is also obscured by a heavy stain, but appears to be 'garlic'.",
+    "originalFile": "PXL_20251223_224308428.jpg, PXL_20251223_224312032.jpg"
   },
   {
     "name": "Pork Roast in Soy Sauce",
@@ -5990,20 +5883,10 @@ const recipes = [
       "When meat is at the fall-a-part stage, transfer to plate.",
       "Remove bones and fat - discard.",
       "Remove liquid fat from pan.",
-      "Transfer liquid to dipping bowls or casserole - add meat to dish.",
-      "Combine spice mix in a bowl and mix.",
-      "Coat meat chunks with 4 tsp of spice mix.",
-      "Heat 2 Tbs oil in dutch oven, add half of meat, sear on all sides, transfer to bowl.",
-      "Repeat with other half of meat.",
-      "Add a little more oil and saute onions until translucent.",
-      "Add remaining spice mix for 1 minute.",
-      "Add orange juice, lime juice, water, beef broth, salt & pepper.",
-      "Braise meat for ~2 hrs, turning 2-3x until fork tender.",
-      "Remove meat from pot and pull apart with fork.",
-      "Reduce liquid slightly, return meat to pot until serve."
+      "Transfer liquid to dipping bowls or casserole - add meat to dish."
     ],
-    "notes": "The pre-printed fields for 'SERVES' and 'TIME' are filled in as '6-8' and '3-4 hrs' respectively. The 'PREHEAT OVEN' field is blank, as the instructions are for stovetop cooking.\n\nGood w/: Spanish rice, refried beans, corn, OR as taco meat. Card has printed text '© 321done.com' at the bottom.",
-    "originalFile": "PXL_20251223_221808161.jpg, PXL_20251223_221811314.jpg, PXL_20251223_221801039.jpg"
+    "notes": "The pre-printed fields for 'SERVES' and 'TIME' are filled in as '6-8' and '3-4 hrs' respectively. The 'PREHEAT OVEN' field is blank, as the instructions are for stovetop cooking.",
+    "originalFile": "PXL_20251223_221808161.jpg, PXL_20251223_221811314.jpg"
   },
   {
     "name": "Potato Salad",
@@ -6183,14 +6066,10 @@ const recipes = [
       "Rinse farro 2x, cover with water in saucepan.",
       "Bring to a boil.",
       "Boil for 20-30 minutes - drain.",
-      "Add all ingredients to large bowl, mix and add ~3 Tbs spicy mayo - mix, eat",
-      "In large frying pan saute vegetables until just softened. Add Gochujang sauce a few minutes before ready to serve.",
-      "At the same time, Add 1 Tbs oil to small fry pan and add rice. form into a patty and cook until bottom is crispy. Flip over and repeat on other side.",
-      "At the same time - fry 2 eggs to desired doneness",
-      "Divide the rice between 2 bowls, add Veg and top with egg."
+      "Add all ingredients to large bowl, mix and add ~3 Tbs spicy mayo - mix, eat"
     ],
-    "notes": "The word 'small' appears to be written above 'med.' for the red onion, likely as a correction. The 'directions' section is very brief and seems to list additional components rather than preparation steps, suggesting the full instructions are on another card.\n\nCard has a pre-printed heading: 'directions'. The phrase 'At the same time' is underlined in both instances. 'Veg' is likely an abbreviation for vegetables.",
-    "originalFile": "PXL_20251223_220207409.MP.jpg, PXL_20251223_220209980.jpg, PXL_20251223_220200104.jpg"
+    "notes": "The word 'small' appears to be written above 'med.' for the red onion, likely as a correction. The 'directions' section is very brief and seems to list additional components rather than preparation steps, suggesting the full instructions are on another card.",
+    "originalFile": "PXL_20251223_220207409.MP.jpg, PXL_20251223_220209980.jpg"
   },
   {
     "name": "Provençal Veg Soup",
@@ -6351,16 +6230,10 @@ const recipes = [
       "Melt margarine in large saucepan over low heat. Add marshmallows and stir until completely melted. Remove from heat.",
       "Add RICE KRISPIES cereal. Stir until well coated.",
       "Using buttered spatula or waxed paper, press mixture evenly into buttered 13x9x2-inch pan. Cut into squares when cool.",
-      "Microwave Directions: Microwave margarine and marshmallows on full power in large glass mixing bowl for 2 minutes. Stir to combine. Microwave on full power 1 ½ to 2 minutes longer. Stir until smooth. Add cereal; stir until coated. Press into pan as directed in step 3.",
-      "*Mark out cookies with fork.",
-      "Sprinkle the top with sugar.",
-      "Bake at 325° 35-40' until just golden brown.",
-      "Cool in pan 5'.",
-      "Gently turn out onto waxed paper on cooling rack.",
-      "With large knife cut into desired cookie size."
+      "Microwave Directions: Microwave margarine and marshmallows on full power in large glass mixing bowl for 2 minutes. Stir to combine. Microwave on full power 1 ½ to 2 minutes longer. Stir until smooth. Add cereal; stir until coated. Press into pan as directed in step 3."
     ],
-    "notes": "The primary recipe is a handwritten modification of the printed recipe. An additional handwritten note suggests '3T marg'. Nutritional notes added: '122 cal/bar', '1.6 g fat'. Yield note: '15 bar/recipe'. The original printed recipe calls for 1/4 cup margarine, 1 pkg (10 oz.) marshmallows, and 6 cups cereal. Printed note: 'Use fresh marshmallows for best results.'\n\nThis card only contains instructions, under the heading 'directions'. The first instruction is marked with an asterisk.",
-    "originalFile": "PXL_20251223_173518604.jpg, PXL_20251223_173507127.jpg"
+    "notes": "The primary recipe is a handwritten modification of the printed recipe. An additional handwritten note suggests '3T marg'. Nutritional notes added: '122 cal/bar', '1.6 g fat'. Yield note: '15 bar/recipe'. The original printed recipe calls for 1/4 cup margarine, 1 pkg (10 oz.) marshmallows, and 6 cups cereal. Printed note: 'Use fresh marshmallows for best results.'",
+    "originalFile": "PXL_20251223_173518604.jpg"
   },
   {
     "name": "Rich Roll Cookies",
@@ -6946,11 +6819,10 @@ const recipes = [
       "Add tomato sauce (or paste), cook 5'.",
       "Add remaining 1/2 cup of stock plus sugar, continue simmering 15'.",
       "Turn off heat, add shrimp, stir and cover pot for 10'.",
-      "Serve on rice or grits.",
-      "Check Recipe folder on Pinterest"
+      "Serve on rice or grits."
     ],
-    "notes": "Source: Paul Prudhomme's Louisiana Kitchen. Serves: 5-6. Time: ~60. The card lists ingredients under both the 'ingredients' and 'directions' headings; no instructions are present. Asterisks next to shrimp and shrimp stock may refer to notes on a separate card.\n\nThe card is labeled 'directions' but instead of listing cooking steps, it acts as a pointer to a digital recipe location.",
-    "originalFile": "PXL_20251223_225709353.jpg, PXL_20251223_225712638.jpg, PXL_20251223_225701550.jpg"
+    "notes": "Source: Paul Prudhomme's Louisiana Kitchen. Serves: 5-6. Time: ~60. The card lists ingredients under both the 'ingredients' and 'directions' headings; no instructions are present. Asterisks next to shrimp and shrimp stock may refer to notes on a separate card.",
+    "originalFile": "PXL_20251223_225709353.jpg, PXL_20251223_225712638.jpg"
   },
   {
     "name": "Shrimp in Catsup Sauce",
@@ -7060,11 +6932,10 @@ const recipes = [
     "ingredients": [],
     "instructions": [
       "We suggest baking in 350° F. oven in covered container approximately 15 minutes per pound.",
-      "Keep Refrigerated.",
-      "Start 1 box of wild rice at 5:30"
+      "Keep Refrigerated."
     ],
-    "notes": "This card is not a recipe, but an advertisement or business card. The main text describes the products. A handwritten note 'Piper does Shipping' has been added. Full transcribed text: '\"Real\" hickory smoked bacon & hams are cured in the Ozark mountains by the Hatfields... Special sugar cure and smoke from genuine hickory logs give Our bacon & hams that rich golden brown finish and assure that old fashioned good Flavor'. Contact info: We Ship Anywhere in the U.S.A. Piper does Shipping. 7329 Gateway Drive • Neosho, MO 64850. Phone 417-624-3765.\n\nThis appears to be a single timing instruction or the first step of a larger recipe. The paper is crumpled and stained.",
-    "originalFile": "PXL_20251223_222907971.jpg, PXL_20251223_222911343.jpg, PXL_20251223_222901713.jpg"
+    "notes": "This card is not a recipe, but an advertisement or business card. The main text describes the products. A handwritten note 'Piper does Shipping' has been added. Full transcribed text: '\"Real\" hickory smoked bacon & hams are cured in the Ozark mountains by the Hatfields... Special sugar cure and smoke from genuine hickory logs give Our bacon & hams that rich golden brown finish and assure that old fashioned good Flavor'. Contact info: We Ship Anywhere in the U.S.A. Piper does Shipping. 7329 Gateway Drive • Neosho, MO 64850. Phone 417-624-3765.",
+    "originalFile": "PXL_20251223_222907971.jpg, PXL_20251223_222911343.jpg"
   },
   {
     "name": "Smoked Pork Tenderloin",
@@ -7137,16 +7008,10 @@ const recipes = [
     "instructions": [
       "Place brine and fish in a large plastic container and put in fridge for ~12 hrs (No more than 48 hrs).",
       "Remove fish from brine and pat dry.",
-      "Place fish on cooling rack on cookie sheet and place in fridge.",
-      "for ~12 hrs (<24 hrs, more than 2 hrs.), until fish develops a nice shiny skin called pellicle. Note - should be skin side down.",
-      "Place fish skin side down in smoker (on smoke) for 3 hrs total.",
-      "After 1 hr. brush off white coagulated protein then baste with maple syrup.",
-      "Baste every hour.",
-      "Remove from smoker and allow to cool at RT, then refrigerate uncovered for 30' before wrapping in waxed paper then baggie for storage.",
-      "Lasts for 10 days in fridge or 1 year frozen."
+      "Place fish on cooling rack on cookie sheet and place in fridge."
     ],
-    "notes": "The card contains the title, ingredients, and the beginning of the instructions, but not the final smoking steps. The ingredients for the brine (water, salt, sugar, syrup) are grouped by a handwritten brace. A note '10am' points to the start of the instructions. A small word 'all' is written above 'in a large'.\n\nThis appears to be the instructions/continuation for a recipe, likely for smoked fish. The first instruction time is written as '~12 hrs' with what looks like '9 or' written above it. The text 'Baste with' is crossed out before 'After 1 hr'. 'RT' likely stands for Room Temperature. 'on smoke' is underlined.",
-    "originalFile": "PXL_20251223_172032290.jpg, PXL_20251223_172036291.jpg"
+    "notes": "The card contains the title, ingredients, and the beginning of the instructions, but not the final smoking steps. The ingredients for the brine (water, salt, sugar, syrup) are grouped by a handwritten brace. A note '10am' points to the start of the instructions. A small word 'all' is written above 'in a large'.",
+    "originalFile": "PXL_20251223_172032290.jpg"
   },
   {
     "name": "Smoked Salmon",
@@ -7329,12 +7194,10 @@ const recipes = [
       "Add the combined dry ingredients to the wet ingredients.",
       "Chill dough 30 minutes.",
       "Form into balls.",
-      "Roll in cinnamon/sugar mixture.",
-      "Bake (8-10)' at 400° on parchment paper until light golden brown.",
-      "Cool 5' on cookie sheet then transfer to rack"
+      "Roll in cinnamon/sugar mixture."
     ],
-    "notes": "Note in top right corner: 'Best Recipe *'. Note next to flour amount: 'Much less = flat cookie'. The original flour amount of 2 1/2 cups appears to have been updated to 3 cups. 'RT' likely stands for Room Temperature. Baking time is not specified.\n\nThe baking time appears to be 8-10 minutes. An initial '8'' seems to be written, then replaced with '(8-10)'. The '10' is circled for emphasis. The apostrophe (') is used to denote minutes.",
-    "originalFile": "PXL_20251223_171953693.MP.jpg, PXL_20251223_171956388.MP.jpg"
+    "notes": "Note in top right corner: 'Best Recipe *'. Note next to flour amount: 'Much less = flat cookie'. The original flour amount of 2 1/2 cups appears to have been updated to 3 cups. 'RT' likely stands for Room Temperature. Baking time is not specified.",
+    "originalFile": "PXL_20251223_171953693.MP.jpg"
   },
   {
     "name": "Snickerdoodles (King Arthur)",
@@ -7374,7 +7237,7 @@ const recipes = [
       "To color a pale soup, add some tomato skins or a small amount of caramelized sugar during cooking.",
       "To make a thick soup, bring ingredients to a boil. Combine one cup of water with one of the following: 1 teaspoon barley, 2 tablespoons wheat germ flour, 2 tablespoons white flour or 3 tablespoons of grated raw potato. Then add mixture to soup. Reduce heat and simmer as directed."
     ],
-    "notes": "This is a printed, not handwritten, informational card or recipe divider. It contains definitions and general tips, not a specific recipe.\n\nSOUP COOKING TERMS\n\n- Stock - thin, degreased soup made by slowly cooking bones and/or vegetables.\n- Clarify - to remove the cloudiness of stock by adding egg shell and egg white.\n- Consommé - brown stock that has been clarified.\n- Bouillon - stock that has been clarified and reduced by a third.\n- Broth - stock obtained by cooking fish, meat or fowl and vegetables, and straining.\n- Jellied Soup - molded, cold soup from stock made with gelatinous knuckle bones.\n- Chowder - thick soup of vegetables and fish or meat to which milk and salt pork have been added.\n- Puree - soup thickened with butter and sieved vegetables.\n- Cream Soup - puree to which cream and egg yolks have been added.\n- Bisque - cream soup with a shellfish base.",
+    "notes": "This is a printed, not handwritten, informational card or recipe divider. It contains definitions and general tips, not a specific recipe. \n\nSOUP COOKING TERMS\n\n- Stock - thin, degreased soup made by slowly cooking bones and/or vegetables.\n- Clarify - to remove the cloudiness of stock by adding egg shell and egg white.\n- Consommé - brown stock that has been clarified.\n- Bouillon - stock that has been clarified and reduced by a third.\n- Broth - stock obtained by cooking fish, meat or fowl and vegetables, and straining.\n- Jellied Soup - molded, cold soup from stock made with gelatinous knuckle bones.\n- Chowder - thick soup of vegetables and fish or meat to which milk and salt pork have been added.\n- Puree - soup thickened with butter and sieved vegetables.\n- Cream Soup - puree to which cream and egg yolks have been added.\n- Bisque - cream soup with a shellfish base.",
     "originalFile": "PXL_20251223_225959204.jpg"
   },
   {
@@ -7774,6 +7637,9 @@ const recipes = [
       "Add soy sauce & sugar and mix.",
       "Allow mixture to cool completely.",
       "Add 3-4 Tbs to middle of edge.",
+      "Fold wrapper over filling starting with side (1). Wet tip (4) with water/cornstarch to seal.",
+      "Heat 1 1/2 - 2 cups corn oil in small frying pan to medium-high heat (or use deep fryer).",
+      "Fry for ~3' on each side until golden brown.",
       "Fold wrapper over filling starting with side (1). Wet tip (4) with water/cornstarch to seal.",
       "Heat 1 1/2 - 2 cups corn oil in small frying pan to medium-high heat (or use deep fryer).",
       "Fry for ~3' on each side until golden brown."
@@ -8577,7 +8443,9 @@ const recipes = [
       "Spread on absorbent paper to cool. Store in airtight container.",
       "Microwave Directions:* In large microwave-safe bowl melt margarine on HIGH 1 minute.",
       "Stir in seasoned salt and Lea & Perrins® Worcestershire sauce.",
-      "Microwave on HIGH 5 to 6 minutes, stirring every 2 minutes."
+      "Gradually add cereals, nuts and pretzels, stirring until all pieces are evenly coated.",
+      "Microwave on HIGH 5 to 6 minutes, stirring every 2 minutes.",
+      "Spread on absorbent paper to cool. Store in airtight container."
     ],
     "notes": "Makes 9 cups. *Due to differences in microwave ovens, cooking time may need adjustment. These directions were developed using 625 to 700 watt ovens. Checkerboard Kitchens. ©1990, Ralston Purina Company.",
     "originalFile": "PXL_20251223_172351443.jpg"
