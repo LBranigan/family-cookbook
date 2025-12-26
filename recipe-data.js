@@ -55,9 +55,13 @@ const recipes = [
       "Add Almond butter - cream.",
       "Add eggs, vanilla, and almond extract - cream.",
       "Add flour, soda, salt mixture and continue mixing.",
-      "Add nuts* and"
+      "Add nuts and stir with a spoon.",
+      "Roll into large marbles and set on greased cookie sheet.",
+      "Use a sugared glass to press the cookies flat.",
+      "Bake at 350° for 12-15 minutes.",
+      "Cool on racks."
     ],
-    "notes": "Card is subtitled 'Grandpa Herb Hendricks favorite cookies'. Baking temperature is noted as 350°. A brace next to baking soda and salt is marked 'sift'. The instruction is incomplete. The asterisk after 'nuts' in the instructions likely refers to the 'chopped almonds' ingredient. The amount for almond extract was corrected from 1/2 tsp to 1 tsp on the card.",
+    "notes": "Card is subtitled 'Grandpa Herb Hendricks favorite cookies'. Makes 48 cookies/batch, 139 calories/cookie. A brace next to baking soda and salt is marked 'sift'. The asterisk after 'nuts' refers to the 'chopped almonds' ingredient (chopped in nut chopping jar). The amount for almond extract was corrected from 1/2 tsp to 1 tsp on the card.",
     "originalFile": "almond-butter-cookies.jpg"
   },
   {
@@ -1105,9 +1109,13 @@ const recipes = [
     ],
     "instructions": [
       "Preheat oven to 250°.",
-      "In saucepan mix: butter, Worcestershire Sauce, Lawry's Seasoning Salt, garlic powder/salt, and onion powder."
+      "In saucepan mix: butter, Worcestershire Sauce, Lawry's Seasoning Salt, garlic powder/salt, and onion powder.",
+      "Add all cereals, nuts, etc in large roasting pan.",
+      "Drizzle and mix in the spices and liquid component.",
+      "Cook at 250° for 1 hour, mixing every 15 minutes.",
+      "Cool on newspaper before storing."
     ],
-    "notes": "Recipe has been modified. Struck-out ingredients include '6 cups Cheerios' and '1 cup Mixed nuts'. The quantities for all sauce ingredients have also been reduced from their originally written amounts. The card is missing the final steps for combining the mixtures and baking.",
+    "notes": "Recipe has been modified. Struck-out ingredients include '6 cups Cheerios' and '1 cup Mixed nuts'. The quantities for all sauce ingredients have also been reduced from their originally written amounts.",
     "originalFile": "chex-mix-2.jpg"
   },
   {
@@ -1843,14 +1851,17 @@ const recipes = [
       "Cream butter and sugar.",
       "Add vanilla and eggs - 1 at a time.",
       "Add flour mixture a little at a time - Mix well.",
-      "Divide dough into 2, mix shape into flat disks.",
-      "Wrap in Saran wrap-",
-      "refrigerate 2-24 hrs. Remove from fridge and warm for 5' before rolling out on floured surface.",
-      "Roll to 1/4-1/2\" thick. Thicker = softer. Cut w/ cookie cutters.",
-      "Place on parchment covered cookie sheet. Cook at 350°F for 9-10'.",
-      "Remove and let sit on cookie sheet for 5' before transferring to cooling rack. Cool completely."
+      "Divide dough into 2, shape into flat disks.",
+      "Wrap in Saran wrap.",
+      "Refrigerate 2-24 hrs. Remove from fridge and warm for 5 minutes before rolling out on floured surface.",
+      "Roll to 1/4-1/2\" thick. Thicker = softer. Cut with cookie cutters.",
+      "Place on parchment covered cookie sheet. If decorating with sprinkles only, brush with milk before baking.",
+      "Cook at 350°F for 9-10 minutes.",
+      "Remove and let sit on cookie sheet for 5 minutes before transferring to cooling rack. Cool completely.",
+      "Frosting option 1: 4 cups powdered sugar, 2 1/2 Tbs light corn syrup, 3-4 Tbs milk (RT), 1/2 tsp vanilla, food coloring. Add extra water to thin.",
+      "Frosting option 2: 4 cups (1lb) powdered sugar, 5 Tbs warm water, 3 Tbs Meringue powder. Add extra water to make thinner, plus food coloring."
     ],
-    "notes": "Source attribution at top: 'Laura @ Joy food SUNSHINE'. A note 'yummy!' is written next to the title. 'RT' next to eggs likely means 'Room Temperature'. The instruction 'mix shape into flat disks' is transcribed as written but the phrasing is unusual. The instruction 'Wrap in Saran wrap-' ends with a dash, suggesting it may be continued elsewhere.",
+    "notes": "Source: Laura @ Joy Food Sunshine. 'RT' means Room Temperature.",
     "originalFile": "cut-out-sugar-cookies-2.jpg"
   },
   {
@@ -2157,24 +2168,26 @@ const recipes = [
   },
   {
     "name": "Flaky Pastry",
-    "category": "Cookies",
-    "yield": "",
+    "category": "Desserts",
+    "yield": "3 - 9\" crusts",
     "ingredients": [
       "4 C. all-purpose flour",
-      "1 3/4 C. vegetable shortening (not oil) + -> half butter",
+      "3/4 C. vegetable shortening (not oil)",
+      "1/2 cup butter",
       "1 T. sugar",
-      "2 tsp. Salt",
-      "1 T. Vinegar",
+      "2 tsp. salt",
+      "1 T. vinegar",
       "1 egg",
       "1/2 C. water"
     ],
     "instructions": [
-      "Mix with fork first 4 ingredients.",
-      "In another bowl, 1/2 C. water and remaining",
-      "Put ingredients together. Chill at least 15 minutes.",
-      "roll out between wax paper."
+      "Mix with fork first 4 ingredients (flour, shortening, butter, sugar, salt).",
+      "In another bowl, combine 1/2 C. water and remaining ingredients (vinegar, egg).",
+      "Put ingredients together.",
+      "Chill at least 15 minutes.",
+      "Roll out between wax paper."
     ],
-    "notes": "This appears to be the front of a recipe card, as the instructions are incomplete. The card contains several handwritten corrections. The quantity for flour was changed from 6 to 4 cups. The quantity for shortening appears changed to 1 3/4 cups, with a note to substitute half with butter. The quantity for water appears to be corrected from 3/4 to 1/2 cup. The instructions end abruptly.",
+    "notes": "Yields 3 - 9\" crusts (if 1.5x recipe it will make 4 crusts). Keeps in refrigerator 3 days. Freezes indefinitely. Title may read 'Husband's Best'.",
     "originalFile": "flaky-pastry-2.jpg"
   },
   {
@@ -3452,19 +3465,20 @@ const recipes = [
     "category": "Other",
     "yield": "",
     "ingredients": [
-      "1 cup [fruit?] sugar",
+      "1 cup sugar",
       "3/4 cup water",
-      "1 package Ocean Spray cranberries",
-      "12 once"
+      "1 package Ocean Spray cranberries (12 oz)",
+      "Optional: 1/2 tsp grated ginger",
+      "Optional: 1/2 tsp cinnamon"
     ],
     "instructions": [
       "Mix Sugar and water.",
-      "Bring to boil add cranberries.",
-      "boil gentle (ten Minutes).",
-      "cool at room temperature.",
+      "Bring to boil, add cranberries.",
+      "Boil gently for 10 minutes.",
+      "Cool at room temperature.",
       "Put in refrigerator."
     ],
-    "notes": "The card contains a complete, simple recipe. The word following '1 cup' in the ingredients is difficult to decipher but appears to be 'fruit'. A note '12 once' is written below the cranberries ingredient; 'once' is likely a misspelling of 'ounce', indicating the package size.",
+    "notes": "",
     "originalFile": "kaitys-cranberries.jpg"
   },
   {
@@ -4468,7 +4482,7 @@ const recipes = [
   {
     "name": "Nestlé Toll House Choc. Chip Cookies",
     "category": "Cookies",
-    "yield": "",
+    "yield": "3 dozen",
     "ingredients": [
       "2 1/4 cup flour",
       "1 tsp baking soda",
@@ -4481,14 +4495,25 @@ const recipes = [
       "1 cup chopped nuts",
       "1-1/2 cups choc. chips"
     ],
-    "instructions": [],
-    "notes": "This card contains the title and ingredients, with shorthand instructional notes written alongside the ingredient list. A brace groups flour, baking soda, and salt with the note 'Combine in bowl'. A modification in blue ink reads '- for bars + 1/4 tsp'. A second brace groups butter and sugars with the note 'Cream'. An arrow points from the vanilla and eggs to the note '> add 2nd'. 'RT' next to eggs likely stands for Room Temperature.",
+    "instructions": [
+      "Preheat oven to 375°F.",
+      "Combine flour, baking soda, and salt in a bowl.",
+      "Cream together butter and sugars.",
+      "Add vanilla.",
+      "Add eggs one at a time, beat until creamy.",
+      "Add flour mixture, beating well after each addition.",
+      "Stir in nuts and choc. chips.",
+      "Drop in tablespoon fulls onto cookie sheet.",
+      "Bake at 375°F for ~10 minutes.",
+      "For bars: spray a 1/4 sheet then spread cookie dough with wet fingers until evenly distributed. Cook at 375° for 20 minutes."
+    ],
+    "notes": "'RT' next to eggs means Room Temperature. For bars, add 1/4 tsp extra baking soda.",
     "originalFile": "nestl-toll-house-choc-chip-cookies-2.jpg"
   },
   {
     "name": "Never-Fail Sugar Cookies",
     "category": "Cookies",
-    "yield": "",
+    "yield": "5 dozen",
     "ingredients": [
       "4 c. flour",
       "1 1/2 c. sugar",
@@ -4509,7 +4534,7 @@ const recipes = [
       "Bake 430° 10 min.",
       "Garnish with sugar."
     ],
-    "notes": "The amount for milk appears to have been corrected on the card; '2/3' is crossed out and '1/3' is written next to it. The baking temperature of 430° is transcribed as written, although it is unusually high for this type of cookie.",
+    "notes": "Yield: 5 dozen. The amount for milk was corrected from 2/3 to 1/3. The baking temperature of 430° is transcribed as written.",
     "originalFile": "never-fail-sugar-cookies.jpg"
   },
   {
@@ -6277,9 +6302,14 @@ const recipes = [
     "instructions": [
       "Place brine and fish in a large plastic container and put in fridge for ~12 hrs (No more than 48 hrs).",
       "Remove fish from brine and pat dry.",
-      "Place fish on cooling rack on cookie sheet and place in fridge."
+      "Place fish on cooling rack on cookie sheet and place in fridge for ~12 hrs (<24 hrs, more than 2 hrs.) until fish develops a nice shiny skin called pellicle. Note - should be skin side down.",
+      "Place fish skin side down in smoker (on smoke) for 3 hrs total.",
+      "After 1 hr brush off white coagulated protein then baste with maple syrup.",
+      "Baste every hour.",
+      "Remove from smoker and allow to cool at room temperature, then refrigerate uncovered for 30 minutes before wrapping in waxed paper then baggie for storage.",
+      "Lasts for 10 days in fridge or 1 year frozen."
     ],
-    "notes": "The card contains the title, ingredients, and the beginning of the instructions, but not the final smoking steps. The ingredients for the brine (water, salt, sugar, syrup) are grouped by a handwritten brace. A note '10am' points to the start of the instructions. A small word 'all' is written above 'in a large'.",
+    "notes": "The ingredients for the brine (water, salt, sugar, syrup) are grouped by a handwritten brace. A note '10am' points to the start of the instructions.",
     "originalFile": "smoked-salman.jpg"
   },
   {
@@ -7088,12 +7118,15 @@ const recipes = [
       "1 sm. can diced black olives"
     ],
     "instructions": [
-      "Sauté hamburger until cooked through, drain fat, trxf to bowl.",
+      "Sauté hamburger until cooked through, drain fat, transfer to bowl.",
       "Sauté diced onion until translucent.",
       "Add hamburger and other ingredients back to pan including spices.",
-      "Cook a"
+      "Cook for a few minutes until aromatic then add chicken broth.",
+      "Mix thoroughly.",
+      "If using for empanadas - cool completely before filling pastries.",
+      "If using for tacos or burritos, include cheese, salsa, lettuce when filling."
     ],
-    "notes": "The abbreviation 'trxf' in the instructions likely means 'transfer'. The final instruction 'Cook a' appears to be incomplete.",
+    "notes": "",
     "originalFile": "taco-empanada-meat-filling-2.jpg"
   },
   {
