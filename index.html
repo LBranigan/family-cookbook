@@ -1026,11 +1026,79 @@
         @media print {
             body::before,
             .controls,
-            .modal,
             header,
             .view-recipe-btn,
             .print-btn,
-            .toc-section {
+            .toc-section,
+            .stats,
+            .wake-lock-indicator,
+            .photo-gallery-modal {
+                display: none !important;
+            }
+
+            /* When printing a single recipe (body has print-recipe class) */
+            body.print-recipe .recipe-grid,
+            body.print-recipe main {
+                display: none !important;
+            }
+
+            body.print-recipe .modal {
+                display: block !important;
+                position: static !important;
+                background: none !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+            body.print-recipe .modal-content {
+                box-shadow: none !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+            }
+
+            body.print-recipe .modal-header {
+                background: white !important;
+                color: black !important;
+                border-bottom: 2px solid #722F37 !important;
+                padding: 1rem !important;
+            }
+
+            body.print-recipe .modal-header h2 {
+                color: #722F37 !important;
+            }
+
+            body.print-recipe .modal-category {
+                color: #4A3728 !important;
+            }
+
+            body.print-recipe .modal-header::after {
+                display: none !important;
+            }
+
+            body.print-recipe .close-btn,
+            body.print-recipe .print-recipe-btn,
+            body.print-recipe .scaler-section,
+            body.print-recipe .original-photo-section {
+                display: none !important;
+            }
+
+            body.print-recipe .modal-body {
+                padding: 1rem !important;
+            }
+
+            body.print-recipe .ingredients-list li,
+            body.print-recipe .instructions-list li {
+                cursor: default !important;
+            }
+
+            body.print-recipe .ingredients-list li.checked,
+            body.print-recipe .instructions-list li.checked {
+                text-decoration: none !important;
+                opacity: 1 !important;
+            }
+
+            /* When NOT printing a single recipe - hide modal, show grid */
+            body:not(.print-recipe) .modal {
                 display: none !important;
             }
 
@@ -1192,7 +1260,7 @@
                 <span class="modal-category" id="modalCategory">Category</span>
             </div>
             <div class="modal-body">
-                <button class="print-recipe-btn" onclick="window.print()">🖨️ Print Recipe</button>
+                <button class="print-recipe-btn" onclick="printRecipe()">🖨️ Print Recipe</button>
 
                 <div class="modal-meta" id="modalMeta"></div>
 
@@ -1777,6 +1845,13 @@
         document.getElementById('photoGalleryModal').addEventListener('click', (e) => {
             if (e.target.id === 'photoGalleryModal') closePhotoGallery();
         });
+
+        // Print single recipe
+        function printRecipe() {
+            document.body.classList.add('print-recipe');
+            window.print();
+            document.body.classList.remove('print-recipe');
+        }
 
         // Handle browser back button for modals
         window.addEventListener('popstate', (e) => {
